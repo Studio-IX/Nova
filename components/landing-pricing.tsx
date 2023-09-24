@@ -27,7 +27,7 @@ export const LandingPricing = () => {
       {/* Monthly / Yearly */}
       <div></div>
 
-      <div className="flex flex-col md:flex-row items-center w-full justify-between space-y-5 md:space-y-0 space-x-0 md:space-x-10 mt-10 md:mt-20">
+      <div className="flex flex-col md:flex-row items-center w-full md:w-fit justify-between space-y-5 md:space-y-0 space-x-0 md:space-x-10 mt-10 md:mt-20">
         <div className="flex flex-col items-center justify-center w-full md:w-[385px] h-[680px] pt-[52px] bg-[#161616] border border-[#242424] rounded-[1.8rem]">
           <h6 className="pricing_title">Free</h6>
           <p className="pricing_description w-[310px] mt-4">

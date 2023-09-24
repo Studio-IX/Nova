@@ -70,7 +70,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -108,7 +108,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -146,7 +146,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -184,7 +184,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -222,7 +222,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -260,7 +260,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -298,7 +298,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
