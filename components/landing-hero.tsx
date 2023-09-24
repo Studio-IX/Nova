@@ -8,14 +8,12 @@ export const LandingHero = () => {
   const { isSignedIn } = useAuth();
 
   return (
-    <div className="w-full flex flex-col items-center py-12 overflow-hidden">
-      <div className="hero_bg">
-        <Image
-          width={1900}
-          height={1080}
-          alt="Hero background"
-          src="/hero_bg.svg"
-        />
+    <div className="w-full flex flex-col items-center px-5 md:px-0 py-12 overflow-x-hidden">
+      <div className="hero_bg_mobile md:hidden">
+        <Image fill alt="Hero background" src="/hero_bg_mobile.svg" />
+      </div>
+      <div className="hero_bg hidden md:block">
+        <Image fill alt="Hero background" src="/hero_bg.svg" />
       </div>
       <div className="w-fit flex flex-row justify-between items-center px-2 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] z-10">
         <div className="flex flex-row items-center mr-4">
@@ -37,13 +35,13 @@ export const LandingHero = () => {
 
       <p className="hero_description mt-4 z-10">
         Nova is your personalized AI companion for instant, 24/7 conversations.{" "}
-        <br />
+        <br className="hidden md:block" />
         Craft your AI friend and chat anytime, anywhere.
       </p>
 
-      <div className="flex flex-row items-center space-x-10 mt-12 z-10">
+      <div className="flex flex-col md:flex-row w-full justify-center items-center space-y-8 md:space-y-0 space-x-0 md:space-x-10 mt-12 z-10">
         <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-          <button className="bg-white py-5 px-10 rounded-full hero_button_text_black ">
+          <button className="bg-white py-4 md:py-5 px-6 md:px-10 rounded-full hero_button_text_black ">
             Get Started
           </button>
         </Link>
@@ -62,9 +60,9 @@ export const LandingHero = () => {
         </Link>
       </div>
 
-      <div className="flex flex-col items-center space-y-4 mt-12 z-10">
+      <div className="flex flex-col items-center space-y-2 md:space-y-4 mt-12 z-10">
         <div className="flex flex-row items-center justify-center">
-          <div className="relative w-14 h-14">
+          <div className="relative w-10 h-10 md:w-14 md:h-14">
             <Image
               className=" hover:scale-125 transition-all"
               fill
@@ -72,7 +70,7 @@ export const LandingHero = () => {
               alt="User"
             />
           </div>
-          <div className="relative w-14 h-14 -ml-5">
+          <div className="relative w-10 h-10 md:w-14 md:h-14 -ml-5">
             <Image
               className=" hover:scale-125 transition-all"
               fill
@@ -80,7 +78,7 @@ export const LandingHero = () => {
               alt="User"
             />
           </div>
-          <div className="relative w-14 h-14 -ml-5">
+          <div className="relative w-10 h-10 md:w-14 md:h-14 -ml-5">
             <Image
               className=" hover:scale-125 transition-all"
               fill
@@ -88,7 +86,7 @@ export const LandingHero = () => {
               alt="User"
             />
           </div>
-          <div className="relative w-14 h-14 -ml-5">
+          <div className="relative w-10 h-10 md:w-14 md:h-14 -ml-5">
             <Image
               className=" hover:scale-125 transition-all"
               fill
@@ -97,7 +95,6 @@ export const LandingHero = () => {
             />
           </div>
         </div>
-
         <p>1,200+ reviews (4.8 of 5)</p>
       </div>
 

@@ -25,9 +25,9 @@ export const LandingFaq: React.FC = () => {
   return (
     <div
       id="faq"
-      className="w-full flex flex-col z-20 bg-background items-center py-20 bg-bg"
+      className="w-full flex flex-col z-20 bg-background items-center py-0 md:py-20 px-5 md:px-0 bg-bg"
     >
-      <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] mt-[15rem] z-10">
+      <div className="w-fit flex flex-row md:justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] mt-28 md:mt-[15rem] z-10">
         <div className="flex flex-row items-center">
           <div className="relative h-5 w-5 mr-2">
             <Image fill alt="FAQ icon" src="/faq.svg" />
@@ -36,13 +36,13 @@ export const LandingFaq: React.FC = () => {
         </div>
       </div>
       <div>
-        <h2 className="section_titles mt-8">Frequently Asked Questions</h2>
-        <p className="hero_description mt-4 z-10">
+        <h2 className="section_titles mt-5 md:mt-8">Frequently Asked Questions</h2>
+        <p className="hero_description mt-2 md:mt-4 z-10">
           We answered questions so you don&apos;t have to ask them.
         </p>
       </div>
 
-      <div className="flex flex-col justify-center w-[700px] space-y-4 mt-20">
+      <div className="flex flex-col justify-center w-full md:w-[700px] space-y-4 mt-20">
         <div
           className={`bg-[#161616] border border-[#242424] rounded-[1.4rem] py-4 ${
             isQuestionOpen(0) ? "active-faq" : ""
@@ -70,7 +70,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -108,7 +108,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -146,7 +146,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -184,7 +184,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -222,7 +222,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -260,7 +260,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -298,7 +298,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-md mt-2 w-full md:w-[700px]">
+              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[700px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to

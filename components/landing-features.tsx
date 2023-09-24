@@ -4,7 +4,7 @@ export const LandingFeatures = () => {
   return (
     <div
       id="features"
-      className="w-full flex flex-col z-20 bg-bg py-20 items-center"
+      className="w-full flex flex-col z-20 bg-bg md:py-20 px-5 md:px-0 items-center"
     >
       <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] mt-40 z-10">
         <div className="flex flex-row items-center">
@@ -16,17 +16,17 @@ export const LandingFeatures = () => {
       </div>
 
       <div>
-        <h2 className="section_titles mt-8">Nova features</h2>
-        <p className="hero_description mt-4 z-10">
+        <h2 className="section_titles mt-5 md:mt-8">Nova features</h2>
+        <p className="hero_description mt-2 md:mt-4 z-10">
           Discover Nova&apos;s Powerful Features: Tailor-made AI companionship
           and
-          <br />
+          <br className="hidden md:block" />
           endless conversation possibilities.
         </p>
       </div>
 
-      <div className="flex flex-row justify-between items-center space-x-6 mt-20">
-        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-[385px] h-[215px]">
+      <div className="flex flex-col md:flex-row justify-between items-center space-x-0 md:space-x-6 mt-10 md:mt-20 space-y-5 md:space-y-0">
+        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
           <Image width={26} height={26} src="/ai.svg" alt="AI icon" />
           <h4 className="feature_title mt-4">Personalization</h4>
           <p className="feature_description mt-1">
@@ -35,7 +35,7 @@ export const LandingFeatures = () => {
           </p>
         </div>
 
-        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-[385px] h-[215px]">
+        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
           <Image width={26} height={26} src="/learn.svg" alt="AI icon" />
           <h4 className="feature_title mt-4">Learning and Adaptation</h4>
           <p className="feature_description mt-1">
@@ -44,7 +44,7 @@ export const LandingFeatures = () => {
           </p>
         </div>
 
-        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-[385px] h-[215px]">
+        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
           <Image width={26} height={26} src="/multipurpose.svg" alt="AI icon" />
           <h4 className="feature_title mt-4">Multi-Purpose</h4>
           <p className="feature_description mt-1">
@@ -53,8 +53,8 @@ export const LandingFeatures = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-row justify-between items-center space-x-6 mt-6">
-        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-[385px] h-[215px]">
+      <div className="flex flex-col md:flex-row justify-between items-center space-x-0 md:space-x-6 mt-5 md:mt-6 space-y-5 md:space-y-0">
+        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
           <Image width={26} height={26} src="/time.svg" alt="AI icon" />
           <h4 className="feature_title mt-4">24/7 Availability</h4>
           <p className="feature_description mt-1">
@@ -63,7 +63,7 @@ export const LandingFeatures = () => {
           </p>
         </div>
 
-        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-[385px] h-[215px]">
+        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
           <Image width={26} height={26} src="/security.svg" alt="AI icon" />
           <h4 className="feature_title mt-4">Privacy and Security</h4>
           <p className="feature_description mt-1">
@@ -72,7 +72,7 @@ export const LandingFeatures = () => {
           </p>
         </div>
 
-        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-[385px] h-[215px]">
+        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
           <Image width={26} height={26} src="/quick.svg" alt="AI icon" />
           <h4 className="feature_title mt-4">Easy Setup</h4>
           <p className="feature_description mt-1">
@@ -82,7 +82,7 @@ export const LandingFeatures = () => {
         </div>
       </div>
 
-      <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] mt-[15rem] z-10">
+      <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] mt-20 md:mt-[15rem] z-10">
         <div className="flex flex-row items-center">
           <div className="relative h-5 w-5 mr-2">
             <Image fill alt="Arrow right icon" src="/features.svg" />
@@ -92,16 +92,16 @@ export const LandingFeatures = () => {
       </div>
 
       <div>
-        <h2 className="section_titles mt-8">And so much more</h2>
-        <p className="hero_description mt-4 z-10">
+        <h2 className="section_titles mt-5 md:mt-8">And so much more</h2>
+        <p className="hero_description mt-2 md:mt-4 z-10">
           Top of the line AI features which guarantees a better experience,
           explore the possibilities,
-          <br />
+          <br className="hidden md:block" />
           and unlock the full potential of what Nova has to offer.
         </p>
       </div>
 
-      <div className="flex flex-row justify-between space-x-[20rem] mt-32">
+      <div className="flex flex-col md:flex-row justify-between md:space-x-[20rem] mt-20 md:mt-32">
         <div className="flex flex-col">
           <div className="flex flex-row items-center space-x-4">
             <div className="flex justify-center items-center w-11 h-11 cursor-pointer rounded-md border border-primry bg-[#221611] z-10">
@@ -111,17 +111,19 @@ export const LandingFeatures = () => {
             </div>
             <p className="section_tag_title">AI Companion</p>
           </div>
-          <h5 className="feature_sub_title">Personal AI Companion</h5>
-          <p className="feature_description mt-5">
+          <h5 className="feature_sub_title mt-4 md:mt-0">
+            Personal AI Companion
+          </h5>
+          <p className="feature_description mt-0 md:mt-5">
             Top of the line AI features which guarantees a better
-            <br />
+            <br className="hidden md:block" />
             experience, explore the possibilities and unlock the full
-            <br />
+            <br className="hidden md:block" />
             potential of what Nova has to offer.
           </p>
 
-          <button className="bg-[#1F1F1F] flex items-center border border-[#3B3B3B] py-5 px-10 w-fit rounded-full hero_button_text_white mt-10">
-            Get Started
+          <button className="bg-[#1F1F1F] flex items-center border border-[#3B3B3B] py-4 md:py-5 px-6 md:px-10 w-fit rounded-full hero_button_text_white mt-5 md:mt-10">
+            Learn More
             <span className="ml-3">
               <Image
                 width={8}
@@ -133,7 +135,7 @@ export const LandingFeatures = () => {
           </button>
         </div>
 
-        <div>
+        <div className="mt-20 md:mt-0">
           <Image
             width={440}
             height={515}
@@ -155,18 +157,18 @@ export const LandingFeatures = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center">
-        <h2 className="section_titles mt-8">
+      <div className="flex flex-col w-full items-center">
+        <h2 className="section_titles mt-5 md:mt-8">
           All your favourite personalities
         </h2>
-        <p className="hero_description mt-4 z-10">
+        <p className="hero_description mt-2 md:mt-4 z-10">
           Nova comes loaded with pre-created personalities and popular
           individuals
-          <br />
+          <br className="hidden md:block" />
           dead and alive, Try Albert Einstein or Elon Musk for example
         </p>
 
-        <button className="bg-[#1F1F1F] flex items-center border border-[#3B3B3B] py-5 px-10 w-fit rounded-full hero_button_text_white mt-10">
+        <button className="bg-[#1F1F1F] flex items-center border border-[#3B3B3B] py-4 md:py-5 px-6 md:px-10 w-fit rounded-full hero_button_text_white mt-10">
           Explore Personalities
           <span className="ml-3">
             <Image
@@ -178,19 +180,38 @@ export const LandingFeatures = () => {
           </span>
         </button>
 
-        <div className="personalities mt-32">
-          <Image
-            width={550}
-            height={550}
-            alt="Nova personalities"
-            src="/personalities.svg"
-          />
-          <Image
-            width={100}
-            height={100}
-            alt="Nova logo"
-            src="/roundlogo.svg"
-          />
+        <div className="hidden md:block">
+          <div className="personalities mt-32">
+            <Image
+              width={550}
+              height={550}
+              alt="Nova personalities"
+              src="/personalities.svg"
+            />
+            <Image
+              width={100}
+              height={100}
+              alt="Nova logo"
+              src="/roundlogo.svg"
+            />
+          </div>
+        </div>
+
+        <div className="md:hidden">
+          <div className="personalities mt-0">
+            <Image
+              width={320}
+              height={320}
+              alt="Nova personalities"
+              src="/personalities.svg"
+            />
+            <Image
+              width={25}
+              height={25}
+              alt="Nova logo"
+              src="/roundlogo.svg"
+            />
+          </div>
         </div>
       </div>
     </div>
