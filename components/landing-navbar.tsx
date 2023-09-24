@@ -4,9 +4,11 @@ import { navLinks } from "@/constants";
 import Link from "next/link";
 import { useAuth } from "@clerk/nextjs";
 import Image from "next/image";
+import { useState } from "react";
 
 export const LandingNavbar = () => {
   const { isSignedIn } = useAuth();
+  const [toggle, setToggle] = useState(false);
   return (
     <div className="w-full flex flex-col z-20 bg-bg">
       <div className="flex flex-row justify-between py-0 md:py-1 items-center px-5 md:px-40 z-20">
@@ -29,9 +31,36 @@ export const LandingNavbar = () => {
           </ul>
         </div>
 
-        <div className="md:hidden">
-          <div className="bg-white rounded-xl items-center justify-center flex w-[40px] h-[40px]">
-                <Image width={20} height={10} src="/menu.svg" alt="menu"/>
+        <div className="md:hidden justify-end items-center">
+          <div
+            className="bg-white rounded-xl items-center justify-center flex w-[40px] h-[40px]"
+            onClick={() => setToggle((prev) => !prev)}
+          >
+            <Image
+              width={20}
+              height={10}
+              src={toggle ? "/close.svg" : "menu.svg"}
+              alt="menu"
+            />
+          </div>
+
+          <div
+            className={`${
+              toggle ? "flex" : "hidden"
+            } p-6 bg-bg border border-[#242424] absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl`}
+          >
+            <ul className="list-none flex-col justify-end items-center flex-1">
+              {navLinks.map((nav, index) => (
+                <li
+                  key={nav.id}
+                  className={`font-dmSans font-normal cursor-pointer text-[16px] ${
+                    index === navLinks.length - 1 ? "mr-0" : "mb-4"
+                  } text-white mr-10`}
+                >
+                  <a href={`#${nav.id}`}>{nav.title}</a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 

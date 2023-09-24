@@ -20,7 +20,7 @@ export const LandingHero = () => {
           <div className="bg-[#F56627] rounded-full px-3 py-1 mr-2">
             <p className="section_tag_name">New</p>
           </div>
-          <p className="section_tag_title">Introducing custom bots</p>
+          <p className="section_tag_title">Introducing personal bots</p>
         </div>
         <div className="relative h-4 w-4 mr-2">
           <Image fill alt="Arrow right icon" src="/arrow_right.svg" />
