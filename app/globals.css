@@ -71,7 +71,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-bg text-foreground;
   }
 }
 
@@ -87,6 +87,10 @@ body {
 }
 
 /* GENERAL STYLES */
+
+.inactive-icon {
+  filter: grayscale(100%) brightness(70%) hue-rotate(180deg);
+}
 
 .section_tag_title {
   @apply text-[13px] md:text-[16px] font-dmSans font-normal text-start text-primry;
