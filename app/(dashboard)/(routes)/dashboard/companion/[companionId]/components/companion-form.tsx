@@ -5,7 +5,7 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
-import { Wand2 } from "lucide-react";
+import { Wand2Icon } from "lucide-react";
 import { Category, Companion } from "@prisma/client";
 
 import {
@@ -126,7 +126,7 @@ export const CompanionForm = ({
           className="space-y-8 pb-10"
         >
           <div className="flex flex-col items-center">
-            <h2 className="text-white text-[28px] font-normal font-dmSans pb-10">
+            <h2 className="text-white text-[22px] md:text-[28px] font-normal font-dmSans pb-4 pt-6 md:pt-0 md:pb-10">
               Create Companion
             </h2>
           </div>
@@ -145,7 +145,7 @@ export const CompanionForm = ({
               </FormItem>
             )}
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-10">
+          <div className="md:grid grid-cols-1 md:grid-cols-2 gap-4 pt-10">
             <FormField
               name="name"
               control={form.control}
@@ -278,9 +278,9 @@ export const CompanionForm = ({
             )}
           />
           <div className="w-full flex justify-center pt-12">
-            <Button size="lg" disabled={isLoading}>
+            <Button size="default" variant="premium" disabled={isLoading}>
               {initialData ? "Edit your companion" : "Create your companion"}
-              <Wand2 className="w-4 h-4 ml-2" />
+              <Wand2Icon className="w-4 h-4 ml-2" />
             </Button>
           </div>
         </form>

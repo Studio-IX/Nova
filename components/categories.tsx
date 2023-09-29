@@ -24,21 +24,21 @@ export const Categories = ({ data }: CategoriesProps) => {
     router.push(url);
   };
   return (
-    <div className="w-full overflow-x-auto space-x-2 flex p-1 md:-mt-4">
+    <div className="w-full overflow-x-auto space-x-2 flex p-1 -mt-0 md:-mt-4">
       <button
         onClick={() => onClick(undefined)}
         className={cn(
           `
-                    flex
+                    no_wrap_text
+                    px-4
+                    md:px-6
                     items-center
                     text-center
-                    text-xs
+                    text-[15px]
                     md:text-[16px]
                     font-dmSans
                     font-normal
-                    px-2
-                    md:px-4
-                    py-2
+                    py-3
                     md:py-3
                     rounded-md
                     bg-[#1D1D1D]
@@ -55,17 +55,16 @@ export const Categories = ({ data }: CategoriesProps) => {
           onClick={() => onClick(item.id)}
           key={item.id}
           className={cn(
-            `
-                        flex
+            `           
+                        px-4
+                        md:px-6
+                        no_wrap_text
                         items-center
-                        text-center
-                        text-xs
+                        text-[15px]
                         md:text-[16px]
                         font-dmSans
                         font-normal
-                        px-2
-                        md:px-4
-                        py-2
+                        py-3
                         md:py-3
                         rounded-md
                         bg-[#1D1D1D]

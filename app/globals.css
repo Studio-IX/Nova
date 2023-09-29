@@ -75,6 +75,20 @@
   }
 }
 
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f56627;
+  border-radius: 10px;
+}
+
+.no_wrap_text {
+  white-space: nowrap;
+}
+
 * {
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;

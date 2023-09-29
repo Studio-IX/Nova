@@ -21,15 +21,15 @@ export const ChatForm = ({
   isLoading,
 }: ChatFormProps) => {
   return (
-    <form onSubmit={onSubmit} className="border-t border-primary/10 py-4 flex items-center gap-x-2">
+    <form onSubmit={onSubmit} className="border-t border-primary/10 py-4 flex items-center gap-x-4 p-4">
       <Input
         disabled={isLoading}
         value={input}
         onChange={handleInputChange}
         placeholder="Type a message"
-        className="rounded-lg bg-[#1D1D1D]"
+        className="rounded-lg bg-[#1D1D1D] border-none"
       />
-      <Button disabled={isLoading} variant="ghost">
+      <Button disabled={isLoading} size="sq" variant="ghost">
         <SendHorizonal className="w-6 h-6" />
       </Button>
     </form>

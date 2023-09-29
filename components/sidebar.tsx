@@ -49,7 +49,7 @@ export const Sidebar = () => {
 
   return (
     <div className="space-y-4 flex flex-col items-center h-full text-primary bg-sg w-[300px]">
-      <div className="pt-[20px] pb-[200px]">
+      <div className="pt-[60px] md:pt-[15px] pb-[200px]">
         <Image width={35} height={35} src="logo_dashboard.svg" alt="logo" />
       </div>
       <div className="p-3 flex-1 flex justify-center">
@@ -79,22 +79,24 @@ export const Sidebar = () => {
         </div>
       </div>
 
-      <div className="flex flex-col bg-[#1F1F1F] border border-[#363534] w-[250px] rounded-2xl items-center py-8">
-        <p className="text-[18px] font-dmSans font-medium ">Get Premium</p>
-        <p className="text-[16px] font-dmSans font-normal text-center mt-1 text-[#A2A2A5]">
-          Unlock exclusive features
-          <br /> with our premium plan.
-        </p>
+      <div className="hidden md:block">
+        <div className="flex flex-col bg-[#1F1F1F] border border-[#363534] w-[250px] rounded-2xl items-center py-8">
+          <p className="text-[18px] font-dmSans font-medium ">Get Premium</p>
+          <p className="text-[16px] font-dmSans font-normal text-center mt-1 text-[#A2A2A5]">
+            Unlock exclusive features
+            <br /> with our premium plan.
+          </p>
 
-        <Button
-          className="mt-4 rounded-lg"
-          onClick={proModal.onOpen}
-          size="xl"
-          variant="premium"
-        >
-          Upgrade
-          <Sparkles className="h-5 w-5 fill-white text-white ml-2" />
-        </Button>
+          <Button
+            className="mt-4 rounded-lg"
+            onClick={proModal.onOpen}
+            size="xl"
+            variant="premium"
+          >
+            Upgrade
+            <Sparkles className="h-5 w-5 fill-white text-white ml-2" />
+          </Button>
+        </div>
       </div>
 
       <div className="pt-4" />

@@ -46,7 +46,7 @@ export const ChatMessage = ({
       )}
     >
       {role !== "user" && src && <BotAvatar src={src} />}
-      <div className="rounded-md px-4 py-2 max-w-sm text-sm bg-[#1D1D1D]">
+      <div className="rounded-lg px-4 md:px-4 py-3 md:py-4 max-w-sm text-[15px] md:text-[16px] font-dmSans font-normal text-[#CCCCCC] bg-[#1D1D1D]">
         {isLoading ? (
           <BeatLoader color={theme === "light" ? "black" : "white"} size={5} />
         ) : (

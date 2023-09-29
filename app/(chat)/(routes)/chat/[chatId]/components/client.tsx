@@ -55,7 +55,7 @@ export const ChatClient = ({
     }
   
     return (
-      <div className="flex flex-col h-[100vh] p-4 space-y-2">
+      <div className="flex flex-col h-[100vh] md:p-4 space-y-2">
         <ChatHeader companion={companion} />
         <ChatMessages 
           companion={companion}

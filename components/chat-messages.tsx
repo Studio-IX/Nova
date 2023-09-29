@@ -35,7 +35,7 @@ export const ChatMessages = ({
   }, [messages.length]);
 
   return (
-    <div className="flex-1 overflow-y-auto pr-4">
+    <div className="flex-1 overflow-y-auto pr-4 pl-4 pt-4 pb-4">
       <ChatMessage
         isLoading={fakeLoading}
         src={companion.src}

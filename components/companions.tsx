@@ -32,7 +32,7 @@ export const Companions = ({ data }: CompanionProps) => {
         >
           <Link href={`/chat/${item.id}`}>
             <CardHeader className="flex items-center justify-center text-center text-muted-foreground">
-              <div className="relative w-full lg:h-[250px] xl:h-[280px] 2xl:h-[300px]">
+              <div className="relative w-full h-[160px] lg:h-[250px] xl:h-[280px] 2xl:h-[300px]">
                 <Image
                   src={item.src}
                   fill
@@ -42,10 +42,14 @@ export const Companions = ({ data }: CompanionProps) => {
               </div>
             </CardHeader>
             <CardContent>
-              <p className="font-medium text-[20px] font-dmSans">{item.name}</p>
-              <p className="text-[16px] font-dmSans font-light text-[#9B9CA1]">{item.description}</p>
+              <p className="font-medium text-[16px] md:text-[20px] font-dmSans">
+                {item.name}
+              </p>
+              <p className="text-[15px] md:text-[16px] font-dmSans font-light text-[#9B9CA1]">
+                {item.description}
+              </p>
             </CardContent>
-            <CardFooter className="flex items-center justify-between text-[16px] text-[#9B9CA1] font-dmSans font-light">
+            <CardFooter className="flex items-center justify-between text-[15px] md:text-[16px] text-[#9B9CA1] font-dmSans font-light">
               <p className="lowercase">@{item.userName}</p>
               <div className="flex items-center">
                 <MessagesSquare className="w-4 h-4 mr-2" />
