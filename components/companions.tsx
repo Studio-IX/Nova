@@ -42,7 +42,7 @@ export const Companions = ({ data }: CompanionProps) => {
               </div>
             </CardHeader>
             <CardContent>
-              <p className="font-medium text-[16px] md:text-[20px] font-dmSans !text-white">
+              <p className="font-medium text-[16px] md:text-[20px] font-dmSans text-white">
                 {item.name}
               </p>
               <p className="text-[15px] md:text-[16px] font-dmSans font-light text-[#9B9CA1]">
