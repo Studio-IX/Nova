@@ -15,7 +15,7 @@
 
     --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
- 
+
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
 
@@ -74,7 +74,6 @@
     @apply bg-bg text-foreground;
   }
 }
-
 
 ::-webkit-scrollbar {
   width: 5px;
