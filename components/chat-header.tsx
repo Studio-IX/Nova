@@ -55,7 +55,7 @@ export const ChatHeader = ({ companion }: ChatHeaderProps) => {
     <div className="flex w-full p-3 md:p-4 justify-between items-center border-b border-primary/10 pb-4">
       <div className="flex gap-x-2 items-center">
         <Button onClick={() => router.back()} size="icon" variant="ghost">
-          <ChevronLeft className="h-8 w-8" />
+          <ChevronLeft color="white" className="h-8 w-8" />
         </Button>
         <BotAvatar src={companion.src} />
         <div className="flex flex-col gap-y-1">
