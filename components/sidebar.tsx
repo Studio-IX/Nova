@@ -81,7 +81,9 @@ export const Sidebar = () => {
 
       <div className="hidden md:block">
         <div className="flex flex-col bg-[#1F1F1F] border border-[#363534] w-[250px] rounded-2xl items-center py-8">
-          <p className="text-[18px] font-dmSans font-medium ">Get Premium</p>
+          <p className="text-[18px] font-dmSans font-medium text-white ">
+            Get Premium
+          </p>
           <p className="text-[16px] font-dmSans font-normal text-center mt-1 text-[#A2A2A5]">
             Unlock exclusive features
             <br /> with our premium plan.

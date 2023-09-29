@@ -30,7 +30,7 @@ export const ChatForm = ({
         className="rounded-lg bg-[#1D1D1D] border-none"
       />
       <Button disabled={isLoading} size="sq" variant="ghost">
-        <SendHorizonal className="w-6 h-6" />
+        <SendHorizonal fill="white" className="w-6 h-6" />
       </Button>
     </form>
   )
