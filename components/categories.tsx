@@ -42,10 +42,11 @@ export const Categories = ({ data }: CategoriesProps) => {
                     md:py-3
                     rounded-md
                     bg-[#1D1D1D]
+                    text-[#818181]
                     hover:opacity-75
                     transition
                 `,
-          !categoryId ? "bg-primry text-white" : "bg-[#1D1D1D] text-white"
+          !categoryId ? "bg-primry text-white" : "bg-[#1D1D1D]"
         )}
       >
         Newest
