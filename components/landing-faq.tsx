@@ -52,7 +52,7 @@ export const LandingFaq: React.FC = () => {
             className="flex flex-row justify-between cursor-pointer mx-5"
             onClick={() => handleQuestionClick(0)}
           >
-            <h2 className="text-textprimary text-[16px] md:text-[20px] font-dmSans font-medium">
+            <h2 className="text-white text-[16px] md:text-[20px] font-dmSans font-medium">
               What is Nova?
             </h2>
             <Image
@@ -70,7 +70,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
+              <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -90,7 +90,7 @@ export const LandingFaq: React.FC = () => {
             className="flex flex-row justify-between cursor-pointer mx-5"
             onClick={() => handleQuestionClick(1)}
           >
-            <h2 className="text-textprimary text-[16px] md:text-[20px] font-dmSans font-medium">
+            <h2 className="text-white text-[16px] md:text-[20px] font-dmSans font-medium">
               How does Nova work?
             </h2>
             <Image
@@ -108,7 +108,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
+              <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -128,7 +128,7 @@ export const LandingFaq: React.FC = () => {
             className="flex flex-row justify-between cursor-pointer mx-5"
             onClick={() => handleQuestionClick(2)}
           >
-            <h2 className="text-textprimary text-[16px] md:text-[20px] font-dmSans font-medium">
+            <h2 className="text-white text-[16px] md:text-[20px] font-dmSans font-medium">
               Is my data secure with Nova?
             </h2>
             <Image
@@ -146,7 +146,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
+              <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -166,7 +166,7 @@ export const LandingFaq: React.FC = () => {
             className="flex flex-row justify-between cursor-pointer mx-5"
             onClick={() => handleQuestionClick(3)}
           >
-            <h2 className="text-textprimary text-[16px] md:text-[20px] font-dmSans font-medium">
+            <h2 className="text-white text-[16px] md:text-[20px] font-dmSans font-medium">
               Can I use Nova for business purposes?
             </h2>
             <Image
@@ -184,7 +184,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
+              <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -204,7 +204,7 @@ export const LandingFaq: React.FC = () => {
             className="flex flex-row justify-between cursor-pointer mx-5"
             onClick={() => handleQuestionClick(4)}
           >
-            <h2 className="text-textprimary text-[16px] md:text-[20px] font-dmSans font-medium">
+            <h2 className="text-white text-[16px] md:text-[20px] font-dmSans font-medium">
               How do I get started with Nova?
             </h2>
             <Image
@@ -222,7 +222,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
+              <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -242,7 +242,7 @@ export const LandingFaq: React.FC = () => {
             className="flex flex-row justify-between cursor-pointer mx-5"
             onClick={() => handleQuestionClick(5)}
           >
-            <h2 className="text-textprimary text-[16px] md:text-[20px] font-dmSans font-medium">
+            <h2 className="text-white text-[16px] md:text-[20px] font-dmSans font-medium">
               Can I change my AI companion&apos;s personality over time?
             </h2>
             <Image
@@ -260,7 +260,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
+              <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to
@@ -280,7 +280,7 @@ export const LandingFaq: React.FC = () => {
             className="flex flex-row justify-between cursor-pointer mx-5"
             onClick={() => handleQuestionClick(6)}
           >
-            <h2 className="text-textprimary text-[16px] md:text-[20px] font-dmSans font-medium">
+            <h2 className="text-white text-[16px] md:text-[20px] font-dmSans font-medium">
               What platforms and devices does Nova support?
             </h2>
             <Image
@@ -298,7 +298,7 @@ export const LandingFaq: React.FC = () => {
             unmountOnExit
           >
             <div className="answer-container mx-5">
-              <p className="text-textsecondary font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
+              <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
                 AI Powered Invoicing is an innovative software solution that
                 harnesses the power of artificial intelligence to simplify and
                 automate the invoicing process. It uses advanced algorithms to

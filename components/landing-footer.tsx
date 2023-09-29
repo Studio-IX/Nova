@@ -48,7 +48,9 @@ export const LandingFooter = () => {
       <div className="w-full flex flex-col items-end md:px-[19rem] mt-20">
         <div className="flex flex-row w-fit bg-[#161616] items-center justify-center px-7 md:px-8 py-4 rounded-full">
           <div className="w-4 h-4 rounded-full bg-[#48AF68] mr-4" />
-          All systems normal
+          <p className="text-white text-[15px] md:text-[18px] font-dmSans font-normal">
+            All systems normal
+          </p>
         </div>
       </div>
 
