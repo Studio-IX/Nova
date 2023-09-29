@@ -41,7 +41,7 @@ export const LandingHero = () => {
 
       <div className="flex flex-col md:flex-row w-full justify-center items-center space-y-8 md:space-y-0 space-x-0 md:space-x-10 mt-12 z-10">
         <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-          <button className="bg-white py-4 md:py-5 px-6 md:px-10 rounded-full hero_button_text_black ">
+          <button className="bg-white py-4 md:py-5 px-8 md:px-10 rounded-full hero_button_text_black ">
             Get Started
           </button>
         </Link>
