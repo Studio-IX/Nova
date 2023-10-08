@@ -143,6 +143,20 @@ body {
   transform: rotate(180deg);
 }
 
+.bg-hero-bg {
+  background-image: url('/hero_bg.svg'); /* Specify the path to your image in the public folder */
+  background-size: cover;
+  background-position: center;
+  
+  
+  @media (max-width: 768px) {
+    background-image: url('/hero_bg_mobile.svg'); /* Mobile background image */
+  }
+}
+
+
+
+
 /* GENERAL STYLES */
 
 /* HERO STYLES */

@@ -1,4 +1,3 @@
-import { navLinks } from "@/constants";
 import Image from "next/image";
 
 export const LandingPricing = () => {
