@@ -1,12 +1,17 @@
+"use client"
+
 import Image from "next/image";
+import Link from "next/link";
+import { useAuth } from "@clerk/nextjs";
 
 export const LandingFeatures = () => {
+  const { isSignedIn } = useAuth();
   return (
     <div
       id="features"
       className="w-full flex flex-col z-20 bg-bg md:py-20 px-5 md:px-0 items-center"
     >
-      <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] mt-40 z-10">
+      <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] hover:bg-[#3E281F] transition-all mt-40 z-10">
         <div className="flex flex-row items-center">
           <div className="relative h-5 w-5 mr-2">
             <Image fill alt="Arrow right icon" src="/features.svg" />
@@ -26,7 +31,7 @@ export const LandingFeatures = () => {
       </div>
 
       <div className="flex flex-col md:flex-row justify-between items-center space-x-0 md:space-x-6 mt-10 md:mt-20 space-y-5 md:space-y-0">
-        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
+        <div className="flex flex-col bg-[#161616] hover:bg-[#1D1D1D] transition-all border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
           <Image width={26} height={26} src="/ai.svg" alt="AI icon" />
           <h4 className="feature_title mt-4">Personalization</h4>
           <p className="feature_description mt-1">
@@ -35,7 +40,7 @@ export const LandingFeatures = () => {
           </p>
         </div>
 
-        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
+        <div className="flex flex-col bg-[#161616] hover:bg-[#1D1D1D] transition-all border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
           <Image width={26} height={26} src="/learn.svg" alt="AI icon" />
           <h4 className="feature_title mt-4">Learning and Adaptation</h4>
           <p className="feature_description mt-1">
@@ -44,7 +49,7 @@ export const LandingFeatures = () => {
           </p>
         </div>
 
-        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
+        <div className="flex flex-col bg-[#161616] hover:bg-[#1D1D1D] transition-all border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
           <Image width={26} height={26} src="/multipurpose.svg" alt="AI icon" />
           <h4 className="feature_title mt-4">Multi-Purpose</h4>
           <p className="feature_description mt-1">
@@ -54,7 +59,7 @@ export const LandingFeatures = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center space-x-0 md:space-x-6 mt-5 md:mt-6 space-y-5 md:space-y-0">
-        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
+        <div className="flex flex-col bg-[#161616] hover:bg-[#1D1D1D] transition-all border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
           <Image width={26} height={26} src="/time.svg" alt="AI icon" />
           <h4 className="feature_title mt-4">24/7 Availability</h4>
           <p className="feature_description mt-1">
@@ -63,7 +68,7 @@ export const LandingFeatures = () => {
           </p>
         </div>
 
-        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
+        <div className="flex flex-col bg-[#161616] hover:bg-[#1D1D1D] transition-all border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
           <Image width={26} height={26} src="/security.svg" alt="AI icon" />
           <h4 className="feature_title mt-4">Privacy and Security</h4>
           <p className="feature_description mt-1">
@@ -72,7 +77,7 @@ export const LandingFeatures = () => {
           </p>
         </div>
 
-        <div className="flex flex-col bg-[#161616] border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
+        <div className="flex flex-col bg-[#161616] hover:bg-[#1D1D1D] transition-all border border-[#242424] rounded-[2rem] p-8 w-full md:w-[385px] h-[215px]">
           <Image width={26} height={26} src="/quick.svg" alt="AI icon" />
           <h4 className="feature_title mt-4">Easy Setup</h4>
           <p className="feature_description mt-1">
@@ -82,7 +87,7 @@ export const LandingFeatures = () => {
         </div>
       </div>
 
-      <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] mt-20 md:mt-[15rem] z-10">
+      <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611]  hover:bg-[#3E281F] transition-all mt-20 md:mt-[15rem] z-10">
         <div className="flex flex-row items-center">
           <div className="relative h-5 w-5 mr-2">
             <Image fill alt="Arrow right icon" src="/features.svg" />
@@ -111,10 +116,10 @@ export const LandingFeatures = () => {
             </div>
             <p className="section_tag_title">AI Companion</p>
           </div>
-          <h5 className="feature_sub_title mt-4 md:mt-0">
+          <h5 className="feature_sub_title mt-4 md:mt-8">
             Personal AI Companion
           </h5>
-          <p className="feature_description mt-0 md:mt-5">
+          <p className="feature_description mt-0 md:mt-2">
             Top of the line AI features which guarantees a better
             <br className="hidden md:block" />
             experience, explore the possibilities and unlock the full
@@ -122,7 +127,7 @@ export const LandingFeatures = () => {
             potential of what Nova has to offer.
           </p>
 
-          <button className="bg-[#1F1F1F] flex items-center border border-[#3B3B3B] py-4 md:py-5 px-6 md:px-10 w-fit rounded-full hero_button_text_white mt-5 md:mt-10">
+          <button className="bg-[#1F1F1F] hover:bg-[#F56627] transition-all flex items-center border border-[#3B3B3B] py-4 md:py-5 px-6 md:px-10 w-fit rounded-full hero_button_text_white mt-5 md:mt-10">
             Learn More
             <span className="ml-3">
               <Image
@@ -147,7 +152,7 @@ export const LandingFeatures = () => {
 
       <div
         id="about"
-        className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] mt-40 z-10"
+        className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] hover:bg-[#3E281F] transition-all mt-40 z-10"
       >
         <div className="flex flex-row items-center">
           <div className="relative h-5 w-5 mr-2">
@@ -168,17 +173,19 @@ export const LandingFeatures = () => {
           dead and alive, Try Albert Einstein or Elon Musk for example
         </p>
 
-        <button className="bg-[#1F1F1F] flex items-center border border-[#3B3B3B] py-4 md:py-5 px-6 md:px-10 w-fit rounded-full hero_button_text_white mt-10">
-          Explore Personalities
-          <span className="ml-3">
-            <Image
-              width={8}
-              height={8}
-              src="/chevron_white.svg"
-              alt="White right chevron icon"
-            />
-          </span>
-        </button>
+        <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
+          <button className="bg-[#1F1F1F] hover:bg-[#F56627] transition-all flex items-center border border-[#3B3B3B] py-4 md:py-5 px-6 md:px-10 w-fit rounded-full hero_button_text_white mt-10">
+            Explore Personalities
+            <span className="ml-3">
+              <Image
+                width={8}
+                height={8}
+                src="/chevron_white.svg"
+                alt="White right chevron icon"
+              />
+            </span>
+          </button>
+        </Link>
 
         <div className="hidden md:block">
           <div className="personalities mt-32">

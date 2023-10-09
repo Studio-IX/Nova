@@ -21,7 +21,7 @@ export const LandingNavbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`${
+                className={` font-dmSans font-normal text-[18px] text-[#9B9CA1] hover:text-white transition-colors ${
                   index === navLinks.length - 1 ? "mr-0" : "mr-[60px]"
                 }`}
               >
@@ -66,7 +66,7 @@ export const LandingNavbar = () => {
 
         <div className="hidden md:block">
           <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-            <button className="bg-[#1F1F1F] flex items-center border border-[#3B3B3B] py-4 px-8 w-fit rounded-full hero_button_text_white">
+            <button className="bg-[#1F1F1F] hover:bg-[#F56627] transition-all flex items-center border border-[#3B3B3B] py-4 px-8 w-fit rounded-full hero_button_text_white">
               {isSignedIn ? "Dashboard" : "Get Started"}
             </button>
           </Link>

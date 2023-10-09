@@ -10,12 +10,17 @@ export const LandingHero = () => {
   return (
     <div className="w-full flex flex-col items-center px-5 md:px-0 py-12 overflow-x-hidden">
       <div className="hero_bg_mobile md:hidden">
-        <Image fill alt="Hero background" src="/hero_bg_mobile.svg" />
+        <Image
+          quality={100}
+          fill
+          alt="Hero background"
+          src="/hero_bg_mobile.svg"
+        />
       </div>
       <div className="hero_bg hidden md:block">
-        <Image fill alt="Hero background" src="/hero_bg.svg" />
+        <Image quality={100} fill alt="Hero background" src="/hero_bg.svg" />
       </div>
-      <div className="w-fit flex flex-row justify-between items-center px-2 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] z-10">
+      <div className="w-fit flex flex-row justify-between items-center px-2 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] hover:bg-[#3E281F] transition-all z-10">
         <div className="flex flex-row items-center mr-4">
           <div className="bg-[#F56627] rounded-full px-3 py-1 mr-2">
             <p className="section_tag_name">New</p>
@@ -41,7 +46,7 @@ export const LandingHero = () => {
 
       <div className="flex flex-col md:flex-row w-full justify-center items-center space-y-8 md:space-y-0 space-x-0 md:space-x-10 mt-12 z-10">
         <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-          <button className="bg-white py-4 md:py-5 px-8 md:px-10 rounded-full hero_button_text_black ">
+          <button className="bg-white hover:bg-[#D5D5D5] transition-all py-4 md:py-5 px-8 md:px-10 rounded-full hero_button_text_black ">
             Get Started
           </button>
         </Link>
@@ -95,11 +100,14 @@ export const LandingHero = () => {
             />
           </div>
         </div>
-        <p>1,200+ reviews (4.8 of 5)</p>
+        <p className=" font-dmSans text-[16px] text-white font-normal">
+          1,200+ reviews (4.8 of 5)
+        </p>
       </div>
 
       <div className="relative mt-10 z-10">
         <Image
+          quality={100}
           width={1580}
           height={950}
           src="/hero_img.png"

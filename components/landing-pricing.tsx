@@ -1,12 +1,21 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+
+import { useAuth } from "@clerk/nextjs";
+import { useToast } from "@/components/ui/use-toast";
 
 export const LandingPricing = () => {
+  const { isSignedIn } = useAuth();
+  const { toast } = useToast();
+
   return (
     <div
       id="pricing"
       className="w-full flex flex-col z-20 bg-bg items-center px-5 md:px-0 md:py-20"
     >
-      <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] mt-[15rem] z-10">
+      <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] hover:bg-[#3E281F] transition-all mt-20 md:mt-[15rem] z-10">
         <div className="flex flex-row items-center">
           <div className="relative h-5 w-5 mr-2">
             <Image fill alt="Arrow right icon" src="/pricing.svg" />
@@ -85,15 +94,17 @@ export const LandingPricing = () => {
               </div>
             </div>
             <div className="flex w-full items-center justify-center">
-              <button className="bg-[#1F1F1F] border border-[#3B3B3B] py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_white mt-10">
-                Get Started
-              </button>
+              <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
+                <button className="bg-[#1F1F1F] hover:bg-[#F56627] transition-all border border-[#3B3B3B] py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_white mt-10">
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col items-center justify-center w-full md:w-[385px] h-[680px] bg-[#161616] border border-[#242424] rounded-[1.8rem]">
-          <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611]">
+          <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611]  hover:bg-[#3E281F] transition-all">
             <div className="flex flex-row items-center">
               <div className="relative h-5 w-5 mr-2">
                 <Image fill alt="Arrow right icon" src="/star.svg" />
@@ -158,9 +169,11 @@ export const LandingPricing = () => {
               </div>
             </div>
             <div className="flex w-full items-center justify-center">
-              <button className="bg-white py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_black mt-10">
-                Get Started
-              </button>
+              <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
+                <button className="bg-white hover:bg-[#D5D5D5] transition-all py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_black mt-10">
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
         </div>

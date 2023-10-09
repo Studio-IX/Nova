@@ -155,8 +155,6 @@ body {
 }
 
 
-
-
 /* GENERAL STYLES */
 
 /* HERO STYLES */
@@ -236,11 +234,11 @@ body {
 }
 
 .feature_sub_title {
-  @apply text-[28px] md:text-[40px] font-dmSans font-medium text-start text-white;
+  @apply text-[28px] md:text-[40px] font-dmSans font-semibold text-start text-white;
 }
 
 .feature_description {
-  @apply text-[15px] md:text-[15px] font-dmSans font-light text-start text-[#9B9CA1];
+  @apply text-[15px] md:text-[16px] font-dmSans font-light text-start text-[#9B9CA1];
 }
 
 .personalities {
@@ -257,6 +255,7 @@ body {
 }
 
 .personalities img:nth-child(1) {
+  animation: rotate 10s infinite ease;
   z-index: 1;
 }
 
@@ -264,6 +263,15 @@ body {
   z-index: 2;
   width: 100px;
   height: 100px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* FEATURES STYLES */

@@ -21,7 +21,7 @@ export const LandingMobile = () => {
       </div>
       <div className="flex flex-col md:flex-row w-full md:w-[1080px] items-center justify-center md:justify-between absolute">
         <div className="flex flex-col items-center md:items-start justify-center">
-          <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] z-10">
+          <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611]  hover:bg-[#3E281F] transition-all z-10">
             <div className="flex flex-row items-center">
               <div className="relative h-5 w-5 mr-2">
                 <Image fill alt="Phone icon" src="/mobile.svg" />
@@ -51,7 +51,7 @@ export const LandingMobile = () => {
           </div>
         </div>
 
-        <div className="md:hidden mt-4">
+        <div className="md:hidden mt-5">
           <div className="flex flex-col">
             <Image
               width={295}

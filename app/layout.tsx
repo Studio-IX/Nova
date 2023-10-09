@@ -1,13 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
-import { ThemeProvider } from "@/components/theme.provider";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 import { ProModal } from "@/components/pro-modal";
 
-const inter = Inter({ subsets: ["latin"] });
+const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nova - Custom AI Friend",
@@ -34,12 +33,10 @@ export default function RootLayout({
       }}
     >
       <html lang="en" suppressHydrationWarning>
-        <body className={cn("bg-[#161616]", inter.className)}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            {children}
-            <ProModal />
-            <Toaster />
-          </ThemeProvider>
+        <body className={cn("bg-[#161616]", dmSans.className)}>
+          {children}
+          <ProModal />
+          <Toaster />
         </body>
       </html>
     </ClerkProvider>

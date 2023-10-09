@@ -7,12 +7,10 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import { useToast } from "@/components/ui/use-toast";
 import { useProModal } from "@/hooks/use-pro-modal";
 import { Sparkles } from "lucide-react";
@@ -60,24 +58,34 @@ export const ProModal = () => {
         </DialogHeader>
         <div className="flex flex-col space-y-2 items-start justify-center">
           <div className="flex flex-row items-center">
-              <Image width={20} height={20} src="/check.svg" alt="Check"/>
-              <p className="ml-3 font-dmSans font-normal text-[16px] text-white">Maximum 2 personalities</p>
+            <Image width={20} height={20} src="/check.svg" alt="Check" />
+            <p className="ml-3 font-dmSans font-normal text-[16px] text-white">
+              Maximum 2 personalities
+            </p>
           </div>
           <div className="flex flex-row items-center">
-              <Image width={20} height={20} src="/check.svg" alt="Check"/>
-              <p className="ml-3 font-dmSans font-normal text-[16px] text-white">Advanced Security & Encrypted Chats</p>
+            <Image width={20} height={20} src="/check.svg" alt="Check" />
+            <p className="ml-3 font-dmSans font-normal text-[16px] text-white">
+              Advanced Security & Encrypted Chats
+            </p>
           </div>
           <div className="flex flex-row items-center">
-              <Image width={20} height={20} src="/check.svg" alt="Check"/>
-              <p className="ml-3 font-dmSans font-normal text-[16px] text-white">Advanced AI model</p>
+            <Image width={20} height={20} src="/check.svg" alt="Check" />
+            <p className="ml-3 font-dmSans font-normal text-[16px] text-white">
+              Advanced AI model
+            </p>
           </div>
           <div className="flex flex-row items-center">
-              <Image width={20} height={20} src="/check.svg" alt="Check"/>
-              <p className="ml-3 font-dmSans font-normal text-[16px] text-white">Email support</p>
+            <Image width={20} height={20} src="/check.svg" alt="Check" />
+            <p className="ml-3 font-dmSans font-normal text-[16px] text-white">
+              Email support
+            </p>
           </div>
           <div className="flex flex-row items-center">
-              <Image width={20} height={20} src="/check.svg" alt="Check"/>
-              <p className="ml-3 font-dmSans font-normal text-[16px] text-white">Premium support</p>
+            <Image width={20} height={20} src="/check.svg" alt="Check" />
+            <p className="ml-3 font-dmSans font-normal text-[16px] text-white">
+              Premium support
+            </p>
           </div>
         </div>
         <div className="flex items-center justify-center">

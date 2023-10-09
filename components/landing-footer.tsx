@@ -26,22 +26,48 @@ export const LandingFooter = () => {
 
         <div className="mt-10 md:mt-0 hidden md:block">
           <p className="footer_title">Product</p>
-          <p className="footer_item mt-4">Pricing</p>
-          <p className="footer_item mt-3">Features</p>
-          <p className="footer_item mt-3">Testimonials</p>
+          <div className="mt-4">
+            <a href="#pricing" className="footer_item">
+              Pricing
+            </a>
+          </div>
+          <div className="mt-4">
+            <a href="#features" className="footer_item">
+              Features
+            </a>
+          </div>
+          <div className="mt-4">
+            <a href="#testimonial" className="footer_item">
+              Testimonials
+            </a>
+          </div>
         </div>
 
         <div className="mt-10 md:mt-0">
           <p className="footer_title">Resources</p>
-          <p className="footer_item mt-4">FAQ</p>
-          <p className="footer_item mt-3">Contact</p>
+
+          <div className="mt-4">
+            <a href="#faq" className="footer_item">
+              FAQ
+            </a>
+          </div>
+
+          <div className="mt-4">
+            <a href="mailto:studioix.agency" className="footer_item">
+              Contact
+            </a>
+          </div>
           <p className="footer_item mt-3">Terms of service</p>
           <p className="footer_item mt-3">Privacy policy</p>
         </div>
 
         <div className="mt-10 md:mt-0 hidden md:block">
           <p className="footer_title">More</p>
-          <p className="footer_item mt-4">Studio IX</p>
+          <div className="mt-4">
+            <a href="https://studioix.agency" className="footer_item mt-4">
+              Studio IX
+            </a>
+          </div>
         </div>
       </div>
 

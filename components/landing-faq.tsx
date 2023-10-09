@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 
-// Define types for your component's state
 type FaqState = null | number;
 
 export const LandingFaq: React.FC = () => {
@@ -19,7 +18,7 @@ export const LandingFaq: React.FC = () => {
   };
 
   const getIconSrc = (index: number) => {
-    return isQuestionOpen(index) ? "/chevron_up.svg" : "/chevron_down.svg"; // Define 'minus' and 'plus' variables
+    return isQuestionOpen(index) ? "/chevron_up.svg" : "/chevron_down.svg";
   };
 
   return (
@@ -27,7 +26,7 @@ export const LandingFaq: React.FC = () => {
       id="faq"
       className="w-full flex flex-col z-20 bg-background items-center py-0 md:py-20 px-5 md:px-0 bg-bg"
     >
-      <div className="w-fit flex flex-row md:justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] mt-28 md:mt-[15rem] z-10">
+      <div className="w-fit flex flex-row md:justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611]  hover:bg-[#3E281F] transition-all mt-28 md:mt-[15rem] z-10">
         <div className="flex flex-row items-center">
           <div className="relative h-5 w-5 mr-2">
             <Image fill alt="FAQ icon" src="/faq.svg" />
@@ -36,7 +35,9 @@ export const LandingFaq: React.FC = () => {
         </div>
       </div>
       <div>
-        <h2 className="section_titles mt-5 md:mt-8">Frequently Asked Questions</h2>
+        <h2 className="section_titles mt-5 md:mt-8">
+          Frequently Asked Questions
+        </h2>
         <p className="hero_description mt-2 md:mt-4 z-10">
           We answered questions so you don&apos;t have to ask them.
         </p>
@@ -64,18 +65,17 @@ export const LandingFaq: React.FC = () => {
             />
           </div>
           <CSSTransition
-            in={isQuestionOpen(0) || false} // Ensure 'in' is a boolean
+            in={isQuestionOpen(0) || false}
             timeout={300}
             classNames="fade"
             unmountOnExit
           >
             <div className="answer-container mx-5">
               <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
-                AI Powered Invoicing is an innovative software solution that
-                harnesses the power of artificial intelligence to simplify and
-                automate the invoicing process. It uses advanced algorithms to
-                streamline workflows, improve accuracy, and optimize payment
-                management.
+                Nova is an AI SaaS (Software as a Service) platform that allows
+                users to create custom AI friends and personalities to chat with
+                24/7. It provides a unique and interactive way for users to
+                engage with AI-powered companions tailored to their preferences.
               </p>
             </div>
           </CSSTransition>
@@ -102,18 +102,19 @@ export const LandingFaq: React.FC = () => {
             />
           </div>
           <CSSTransition
-            in={isQuestionOpen(1) || false} // Ensure 'in' is a boolean
+            in={isQuestionOpen(1) || false}
             timeout={300}
             classNames="fade"
             unmountOnExit
           >
             <div className="answer-container mx-5">
               <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
-                AI Powered Invoicing is an innovative software solution that
-                harnesses the power of artificial intelligence to simplify and
-                automate the invoicing process. It uses advanced algorithms to
-                streamline workflows, improve accuracy, and optimize payment
-                management.
+                Nova leverages advanced artificial intelligence technology to
+                create customizable AI companions. Users can define the
+                personality, traits, and behaviors of their AI friends. These AI
+                companions are designed to engage in natural conversations with
+                users, providing companionship, entertainment, and assistance as
+                needed.
               </p>
             </div>
           </CSSTransition>
@@ -140,18 +141,18 @@ export const LandingFaq: React.FC = () => {
             />
           </div>
           <CSSTransition
-            in={isQuestionOpen(2) || false} // Ensure 'in' is a boolean
+            in={isQuestionOpen(2) || false}
             timeout={300}
             classNames="fade"
             unmountOnExit
           >
             <div className="answer-container mx-5">
               <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
-                AI Powered Invoicing is an innovative software solution that
-                harnesses the power of artificial intelligence to simplify and
-                automate the invoicing process. It uses advanced algorithms to
-                streamline workflows, improve accuracy, and optimize payment
-                management.
+                Yes, your data security is a top priority for Nova. We take
+                extensive measures to ensure the security and privacy of your
+                information. Our platform is built with robust security features
+                and follows industry-standard encryption practices to protect
+                your data from unauthorized access or breaches.
               </p>
             </div>
           </CSSTransition>
@@ -178,18 +179,19 @@ export const LandingFaq: React.FC = () => {
             />
           </div>
           <CSSTransition
-            in={isQuestionOpen(3) || false} // Ensure 'in' is a boolean
+            in={isQuestionOpen(3) || false}
             timeout={300}
             classNames="fade"
             unmountOnExit
           >
             <div className="answer-container mx-5">
               <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
-                AI Powered Invoicing is an innovative software solution that
-                harnesses the power of artificial intelligence to simplify and
-                automate the invoicing process. It uses advanced algorithms to
-                streamline workflows, improve accuracy, and optimize payment
-                management.
+                While Nova is primarily designed for personal use and
+                entertainment, it can also be utilized for certain business
+                applications. Some businesses may find value in using Nova to
+                create AI chatbots for customer support or engagement. However,
+                please note that Nova&apos;s primary focus is on providing
+                personalized AI companions for individuals.
               </p>
             </div>
           </CSSTransition>
@@ -216,18 +218,18 @@ export const LandingFaq: React.FC = () => {
             />
           </div>
           <CSSTransition
-            in={isQuestionOpen(4) || false} // Ensure 'in' is a boolean
+            in={isQuestionOpen(4) || false}
             timeout={300}
             classNames="fade"
             unmountOnExit
           >
             <div className="answer-container mx-5">
               <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
-                AI Powered Invoicing is an innovative software solution that
-                harnesses the power of artificial intelligence to simplify and
-                automate the invoicing process. It uses advanced algorithms to
-                streamline workflows, improve accuracy, and optimize payment
-                management.
+                Getting started with Nova is easy! Simply sign up for an account
+                on our platform, and you&apos;ll have access to the tools and
+                features to create your custom AI companion. You can define its
+                personality, appearance, and chat preferences to make it
+                uniquely yours.
               </p>
             </div>
           </CSSTransition>
@@ -254,18 +256,18 @@ export const LandingFaq: React.FC = () => {
             />
           </div>
           <CSSTransition
-            in={isQuestionOpen(5) || false} // Ensure 'in' is a boolean
+            in={isQuestionOpen(5) || false}
             timeout={300}
             classNames="fade"
             unmountOnExit
           >
             <div className="answer-container mx-5">
               <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
-                AI Powered Invoicing is an innovative software solution that
-                harnesses the power of artificial intelligence to simplify and
-                automate the invoicing process. It uses advanced algorithms to
-                streamline workflows, improve accuracy, and optimize payment
-                management.
+                Yes, you can absolutely change your AI companion&apos;s personality
+                and characteristics over time. Nova offers flexibility, allowing
+                you to adjust your AI friend&apos;s traits, behaviors, and
+                conversation style as your preferences evolve. This ensures that
+                your AI companion remains engaging and relevant to your needs.
               </p>
             </div>
           </CSSTransition>
@@ -292,18 +294,19 @@ export const LandingFaq: React.FC = () => {
             />
           </div>
           <CSSTransition
-            in={isQuestionOpen(6) || false} // Ensure 'in' is a boolean
+            in={isQuestionOpen(6) || false}
             timeout={300}
             classNames="fade"
             unmountOnExit
           >
             <div className="answer-container mx-5">
               <p className="text-[#9B9CA1] font-dmSans font-normal text-[15px] md:text-md mt-2 w-full md:w-[620px]">
-                AI Powered Invoicing is an innovative software solution that
-                harnesses the power of artificial intelligence to simplify and
-                automate the invoicing process. It uses advanced algorithms to
-                streamline workflows, improve accuracy, and optimize payment
-                management.
+                Nova is designed to be accessible across various platforms and
+                devices. You can interact with your AI companion on web
+                browsers, mobile devices (iOS and Android), and even through
+                dedicated applications. Our goal is to make Nova available
+                wherever you are, ensuring seamless and convenient interactions
+                with your AI friend.
               </p>
             </div>
           </CSSTransition>
