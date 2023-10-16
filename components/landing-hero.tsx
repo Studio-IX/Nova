@@ -20,7 +20,7 @@ export const LandingHero = () => {
       <div className="hero_bg hidden md:block">
         <Image quality={100} fill alt="Hero background" src="/hero_bg.svg" />
       </div>
-      <div className="w-fit flex flex-row justify-between items-center px-2 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] hover:bg-[#3E281F] transition-all z-10">
+      <div className="w-fit flex flex-row justify-between items-center px-2 py-2 rounded-full border border-primry bg-[#221611] hover:bg-[#3E281F] transition-all z-10">
         <div className="flex flex-row items-center mr-4">
           <div className="bg-[#F56627] rounded-full px-3 py-1 mr-2">
             <p className="section_tag_name">New</p>
