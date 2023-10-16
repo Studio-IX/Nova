@@ -173,20 +173,6 @@ export const LandingFeatures = () => {
           dead and alive, Try Albert Einstein or Elon Musk for example
         </p>
 
-        <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-          <button className="bg-[#1F1F1F] hover:bg-[#F56627] transition-all flex items-center border border-[#3B3B3B] py-4 md:py-5 px-6 md:px-10 w-fit rounded-full hero_button_text_white mt-10">
-            Explore Personalities
-            <span className="ml-3">
-              <Image
-                width={8}
-                height={8}
-                src="/chevron_white.svg"
-                alt="White right chevron icon"
-              />
-            </span>
-          </button>
-        </Link>
-
         <div className="hidden md:block">
           <div className="personalities mt-32">
             <Image
