@@ -57,11 +57,11 @@ export const LandingFooter = () => {
               Contact
             </a>
           </div>
-          <a href="#faq" className="footer_item mt-3">
-            Terms of service
+          <a href="https://childlike-brow-7b5.notion.site/Nova-Terms-of-Service-acb574ffd87f4f99b6fe8301e52ed2cd?pvs=4" className="footer_item mt-3">
+            <p className="footer_item mt-3">Terms of Services</p>
           </a>
-          <a href="#faq" className="footer_item mt-3">
-            Privacy Policy
+          <a href="https://childlike-brow-7b5.notion.site/Nova-Privacy-Policy-94489190271d431d842b61a71eea43dc?pvs=4">
+            <p className="footer_item mt-3">Privacy Policy</p>
           </a>
         </div>
 
