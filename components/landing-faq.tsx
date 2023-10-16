@@ -39,7 +39,7 @@ export const LandingFaq: React.FC = () => {
           Frequently Asked Questions
         </h2>
         <p className="hero_description mt-2 md:mt-4 z-10">
-          Weed answered questions so you don&apos;t have to ask them.
+          We answered questions so you don&apos;t have to ask them.
         </p>
       </div>
 
