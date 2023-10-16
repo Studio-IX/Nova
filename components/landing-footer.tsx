@@ -57,8 +57,12 @@ export const LandingFooter = () => {
               Contact
             </a>
           </div>
-          <p className="footer_item mt-3">Terms of service</p>
-          <p className="footer_item mt-3">Privacy policy</p>
+          <a href="#" className="footer_item mt-3">
+            Terms of service
+          </a>
+          <a href="#" className="footer_item mt-3">
+            Privacy Policy
+          </a>
         </div>
 
         <div className="mt-10 md:mt-0 hidden md:block">
