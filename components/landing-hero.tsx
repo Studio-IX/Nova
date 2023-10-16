@@ -33,7 +33,7 @@ export const LandingHero = () => {
       </div>
 
       <h1 className="hero_title mt-5 z-10">
-        Nova - Your Custom AI Friend,
+        Nova - Your Custom AI Friend, Testingg
         <br />
         On-Demand Chat Anytime
       </h1>
