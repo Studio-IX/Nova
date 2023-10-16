@@ -1,21 +1,18 @@
-# Website Name (if applicable)
+# Nova - Personalized AI Companions
 
-[![Website Screenshot](screenshot-url.png)](https://www.trynova.co/)
+[![Website Screenshot](https://i.ibb.co/qrgstWQ/Screenshot-2023-10-16-013120.png)](https://www.trynova.co/)
 
 ## About
 
-Briefly describe what the website is about, its purpose, and why it's important.
+Create and use personalized AI chatbots and companions for instant, insightful, 24/7 conversations
 
 ## Features
 
-- Feature 1: Describe the first feature and how it benefits users.
-- Feature 2: Describe the second feature and its advantages.
-- Feature 3: ...
+- Customize your AI companion's personality, interests, and responses to create a truly unique chat experience.
+- Nova learns from your interactions, evolving to understand you better and provide more relevant responses over time.
+- Your conversations with Nova are kept private and secure, ensuring your data is protected at all times.
 
-## Getting Started
-
-Provide instructions on how to access and use the website or web app.
-
+<!--
 ## Usage
 
 Show examples or describe how users can make the most of the website.
@@ -44,3 +41,4 @@ Provide contact information or links to the project's page or repository.
 
 If you want to acknowledge any external sources or inspiration, include it here.
 
+-->
