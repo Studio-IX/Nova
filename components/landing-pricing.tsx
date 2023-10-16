@@ -94,7 +94,7 @@ export const LandingPricing = () => {
               </div>
             </div>
             <div className="flex w-full items-center justify-center">
-              <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
+              <Link>
                 <button className="bg-[#1F1F1F] hover:bg-[#F56627] transition-all border border-[#3B3B3B] py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_white mt-10">
                   Get Started
                 </button>
@@ -169,8 +169,12 @@ export const LandingPricing = () => {
               </div>
             </div>
             <div className="flex w-full items-center justify-center">
-              <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-                <button className="bg-white hover:bg-[#D5D5D5] transition-all py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_black mt-10">
+              <Link>
+                <button 
+                  onClick={() => {
+                    window.open("https://studioixagency.lemonsqueezy.com/checkout/buy/94dc56f6-6a23-4bf3-870c-6feedebaec7e");
+                  }}
+                  className="bg-white hover:bg-[#D5D5D5] transition-all py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_black mt-10">
                   Get Started
                 </button>
               </Link>
