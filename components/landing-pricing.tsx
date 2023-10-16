@@ -169,13 +169,9 @@ export const LandingPricing = () => {
               </div>
             </div>
             <div className="flex w-full items-center justify-center">
-              <Link to="https://studioixagency.lemonsqueezy.com/checkout/buy/94dc56f6-6a23-4bf3-870c-6feedebaec7e">
-  <button
-    className="bg-white hover:bg-[#D5D5D5] transition-all py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_black mt-10"
-  >
-    Get Started
-  </button>
-</Link>
+              <button className="bg-white hover:bg-[#D5D5D5] transition-all py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_black mt-10">
+                Get Started
+              </button>
             </div>
           </div>
         </div>
