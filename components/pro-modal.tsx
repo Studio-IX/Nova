@@ -60,7 +60,7 @@ export const ProModal = () => {
           <div className="flex flex-row items-center">
             <Image width={20} height={20} src="/check.svg" alt="Check" />
             <p className="ml-3 font-dmSans font-normal text-[16px] text-white">
-              Maximum 2 personalities
+              Maximum 20 personalities
             </p>
           </div>
           <div className="flex flex-row items-center">
