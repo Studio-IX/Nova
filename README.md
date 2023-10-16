@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Website Name (if applicable)
+
+[![Website Screenshot](screenshot-url.png)](https://www.trynova.co/)
+
+## About
+
+Briefly describe what the website is about, its purpose, and why it's important.
+
+## Features
+
+- Feature 1: Describe the first feature and how it benefits users.
+- Feature 2: Describe the second feature and its advantages.
+- Feature 3: ...
 
 ## Getting Started
 
-First, run the development server:
+Provide instructions on how to access and use the website or web app.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Usage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Show examples or describe how users can make the most of the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Include screenshots or images to visually represent the website.
 
-## Learn More
+## Technologies Used (if applicable)
 
-To learn more about Next.js, take a look at the following resources:
+- List any technologies, frameworks, or languages used in the website's development.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Specify the license under which the website is distributed.
 
-## Deploy on Vercel
+## Contributors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Mention contributors if applicable.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+
+Provide contact information or links to the project's page or repository.
+
+## Acknowledgments
+
+If you want to acknowledge any external sources or inspiration, include it here.
+
