@@ -151,7 +151,7 @@ export const CompanionForm = ({
               control={form.control}
               render={({ field }) => (
                 <FormItem className="col-span-2 md:col-span-1">
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel className="text-white">Name</FormLabel>
                   <FormControl>
                     <Input
                       disabled={isLoading}
@@ -171,7 +171,7 @@ export const CompanionForm = ({
               control={form.control}
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Description</FormLabel>
+                  <FormLabel className="text-white">Description</FormLabel>
                   <FormControl>
                     <Input
                       disabled={isLoading}
@@ -191,7 +191,7 @@ export const CompanionForm = ({
               name="categoryId"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Category</FormLabel>
+                  <FormLabel className="text-white">Category</FormLabel>
                   <Select
                     disabled={isLoading}
                     onValueChange={field.onChange}
@@ -224,7 +224,7 @@ export const CompanionForm = ({
           </div>
           <div className="space-y-2 w-full">
             <div>
-              <h3 className="text-[20px] font-medium">Configuration</h3>
+              <h3 className="text-[20px] font-medium text-white">Configuration</h3>
               <p className="text-[16px] text-[#A2A2A5]">
                 Detailed instructions for AI Behaviour
               </p>
@@ -236,7 +236,7 @@ export const CompanionForm = ({
             control={form.control}
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Instructions</FormLabel>
+                <FormLabel className="text-white">Instructions</FormLabel>
                 <FormControl>
                   <Textarea
                     disabled={isLoading}
@@ -259,7 +259,7 @@ export const CompanionForm = ({
             control={form.control}
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Example Conversation</FormLabel>
+                <FormLabel className="text-white">Example Conversation</FormLabel>
                 <FormControl>
                   <Textarea
                     disabled={isLoading}
