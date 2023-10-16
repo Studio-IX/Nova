@@ -169,7 +169,7 @@ export const LandingPricing = () => {
               </div>
             </div>
             <div className="flex w-full items-center justify-center">
-              <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
+              <Link href="https://www.google.com">
                 <button className="bg-white hover:bg-[#D5D5D5] transition-all py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_black mt-10">
                   Get Started
                 </button>
