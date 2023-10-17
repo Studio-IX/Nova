@@ -10,7 +10,7 @@ Create and use personalized AI chatbots and companions for instant, insightful, 
 
 - Customize your AI companion's personality, interests, and responses to create a truly unique chat experience.
 - Nova learns from your interactions, evolving to understand you better and provide more relevant responses over time.
-- Your conversations with Nova are kept private and secure, ensuring your data is protected at all times.
+- Your conversations with Nova and its AI chatbots are kept private and secure, ensuring your data is protected at all times.
 
 <!--
 ## Usage
