@@ -8,7 +8,6 @@ import { MemoryManager } from "@/lib/memory";
 import prismadb from "@/lib/prismadb";
 import { rateLimit } from "@/lib/rate-limits";
 
-
 export async function POST(
   request: Request,
   { params }: { params: { chatId: string } }
@@ -30,7 +29,7 @@ export async function POST(
 
     const companion = await prismadb.companion.update({
       where: {
-        id: params.chatId
+        id: params.chatId,
       },
       data: {
         messages: {
@@ -40,7 +39,7 @@ export async function POST(
             userId: user.id,
           },
         },
-      }
+      },
     });
 
     if (!companion) {
@@ -65,7 +64,9 @@ export async function POST(
 
     // Query Pinecone
 
-    const recentChatHistory = await memoryManager.readLatestHistory(companionKey);
+    const recentChatHistory = await memoryManager.readLatestHistory(
+      companionKey
+    );
 
     // Right now the preamble is included in the similarity search, but that
     // shouldn't be an issue
@@ -126,7 +127,7 @@ export async function POST(
 
       await prismadb.companion.update({
         where: {
-          id: params.chatId
+          id: params.chatId,
         },
         data: {
           messages: {
@@ -136,7 +137,7 @@ export async function POST(
               userId: user.id,
             },
           },
-        }
+        },
       });
     }
 
@@ -144,4 +145,4 @@ export async function POST(
   } catch (error) {
     return new NextResponse("Internal Error", { status: 500 });
   }
-};
+}
