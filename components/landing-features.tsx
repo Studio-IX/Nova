@@ -110,12 +110,12 @@ export const LandingFeatures = () => {
       <div className="flex flex-col md:flex-row justify-between md:space-x-[20rem] mt-20 md:mt-32">
         <div className="flex flex-col">
           <div className="flex flex-row items-center space-x-4">
-            <div className="flex justify-center items-center w-11 h-11 cursor-pointer rounded-md border border-primry bg-[#221611] z-10">
+            <div className="flex justify-center items-center w-11 h-11 cursor-pointer rounded-md border border-[#8343F3] bg-[rgba(131,67,243,0.1)] z-10">
               <div className="relative h-4 w-4">
-                <Image fill alt="Bubble icon" src="/bubbles.svg" />
+                <Image fill alt="Bubble icon" src="/bubbles.svg" className="filter hue-rotate-[260deg] brightness-50"/>
               </div>
             </div>
-            <p className="section_tag_title">AI Companion</p>
+            <p className="text-[#8343F3]">AI Companion</p>
           </div>
           <h5 className="feature_sub_title mt-4 md:mt-8">
             Personal AI Companion
