@@ -21,7 +21,7 @@ export const LandingPricing = () => {
           <div className="relative h-5 w-5 mr-2">
             <Image fill alt="Arrow right icon" src="/pricing.svg" className="filter hue-rotate-[260deg] brightness-65"/>
           </div>
-          <p className="text-[#8343F3]">Pricing</p>
+          <p className="text-[#8343F3] mr-1">Pricing</p>
         </div>
       </div>
 
