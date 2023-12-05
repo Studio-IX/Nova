@@ -16,10 +16,10 @@ export const Companions = ({ data }: CompanionProps) => {
   if (data.length === 0) {
     return (
       <div className="pt-10 flex flex-col items-center justify-center space-y-3">
-        <div className="relative w-60 h-60">
+        <div className="relative w-[20rem] md:w-[28rem] h-[20rem] md:h-[28rem]">
           <Image fill className="grayscale" alt="Empty" src="/empty.png" />
         </div>
-        <p className="text-sm text-muted-foreground">No companions found</p>
+        <p className="text-base text-muted-foreground">No companions found</p>
       </div>
     );
   }

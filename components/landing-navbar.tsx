@@ -66,7 +66,7 @@ export const LandingNavbar = () => {
 
         <div className="hidden md:block">
           <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-            <button className="bg-[#1F1F1F] hover:bg-[#F56627] transition-all flex items-center border border-[#3B3B3B] py-4 px-8 w-fit rounded-full hero_button_text_white">
+            <button className="bg-[#1F1F1F] hover:bg-[#8343F3] transition-all ease-in-out duration-300 flex items-center border border-[#3B3B3B] py-4 px-8 w-fit rounded-full hero_button_text_white">
               {isSignedIn ? "Dashboard" : "Get Started"}
             </button>
           </Link>

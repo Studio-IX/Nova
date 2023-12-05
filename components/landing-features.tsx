@@ -1,21 +1,17 @@
-"use client"
+"use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { useAuth } from "@clerk/nextjs";
 
 export const LandingFeatures = () => {
-  const { isSignedIn } = useAuth();
   return (
     <div
       id="features"
       className="w-full flex flex-col z-20 bg-bg md:py-20 px-5 md:px-0 items-center"
     >
-
       <div className="w-fit flex flex-row justify-between items-center px-2 py-2 rounded-full border border-[#8343F3] bg-[rgba(131,67,243,0.1)] transition-all z-10">
         <div className="flex flex-row items-center mr-4">
           <div className="relative h-5 w-5 mr-2">
-            <Image fill alt="Arrow right icon" src="/features.svg" className="filter hue-rotate-[260deg] brightness-50"/>
+            <Image fill alt="Arrow right icon" src="/features.svg" />
           </div>
           <p className="text-[#8343F3]">Features</p>
         </div>
@@ -91,7 +87,7 @@ export const LandingFeatures = () => {
       <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-[#8343F3] bg-[rgba(131,67,243,0.1)] transition-all mt-20 md:mt-[15rem] z-10">
         <div className="flex flex-row items-center">
           <div className="relative h-5 w-5 mr-2">
-            <Image fill alt="Arrow right icon" src="/features.svg" className="filter hue-rotate-[260deg] brightness-50"/>
+            <Image fill alt="Arrow right icon" src="/features.svg" />
           </div>
           <p className="text-[#8343F3] mr-1">Personal AI Companion</p>
         </div>
@@ -112,7 +108,7 @@ export const LandingFeatures = () => {
           <div className="flex flex-row items-center space-x-4">
             <div className="flex justify-center items-center w-11 h-11 cursor-pointer rounded-md border border-[#8343F3] bg-[rgba(131,67,243,0.1)] z-10">
               <div className="relative h-4 w-4">
-                <Image fill alt="Bubble icon" src="/bubbles.svg" className="filter hue-rotate-[260deg] brightness-50"/>
+                <Image fill alt="Bubble icon" src="/bubbles.svg" />
               </div>
             </div>
             <p className="text-[#8343F3]">AI Companion</p>
@@ -157,7 +153,7 @@ export const LandingFeatures = () => {
       >
         <div className="flex flex-row items-center">
           <div className="relative h-5 w-5 mr-2">
-            <Image fill alt="Arrow right icon" src="/features.svg" className="filter hue-rotate-[260deg] brightness-50"/>
+            <Image fill alt="Arrow right icon" src="/features.svg" />
           </div>
           <p className="text-[#8343F3] mr-1">Personalities</p>
         </div>

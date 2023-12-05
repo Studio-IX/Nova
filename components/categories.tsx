@@ -46,7 +46,9 @@ export const Categories = ({ data }: CategoriesProps) => {
                     hover:opacity-75
                     transition
                 `,
-          !categoryId ? "bg-primry text-white" : "bg-[#1D1D1D] text-[#818181]"
+          !categoryId
+            ? "bg-[#8343F3] text-white"
+            : "bg-[#1D1D1D] text-[#818181]"
         )}
       >
         Newest
@@ -73,7 +75,7 @@ export const Categories = ({ data }: CategoriesProps) => {
                         hover:opacity-75
                         transition
                     `,
-            item.id === categoryId ? "bg-primry text-white" : "bg-[#1D1D1D]"
+            item.id === categoryId ? "bg-[#8343F3] text-white" : "bg-[#1D1D1D]"
           )}
         >
           {item.name}

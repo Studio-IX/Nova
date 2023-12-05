@@ -8,6 +8,8 @@ import { MemoryManager } from "@/lib/memory";
 import prismadb from "@/lib/prismadb";
 import { rateLimit } from "@/lib/rate-limits";
 
+export const maxDuration = 300;
+
 export async function POST(
   request: Request,
   { params }: { params: { chatId: string } }
