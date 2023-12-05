@@ -17,9 +17,7 @@ export const LandingFeatures = () => {
           <div className="relative h-5 w-5 mr-2">
             <Image fill alt="Arrow right icon" src="/features.svg" className="filter hue-rotate-[260deg] brightness-150"/>
           </div>
-          <div className="bg-[#8343F3] rounded-full px-3 py-1 mr-2">
-          </div>
-          <p className="text-[#8343F3]">Introducing personal bots</p>
+          <p className="text-[#8343F3]">Features</p>
         </div>
       </div>
 
