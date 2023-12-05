@@ -105,14 +105,13 @@ export const LandingPricing = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center w-full md:w-[385px] h-[680px] bg-[#161616] border border-[#242424] rounded-[1.8rem]">
-          <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-[#8343F3] bg-[rgba(131,67,243,0.1)] transition-all">
+          <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611]  hover:bg-[#3E281F] transition-all">
             <div className="flex flex-row items-center">
               <div className="relative h-5 w-5 mr-2">
-                <Image fill alt="Arrow right icon" src="/star.svg" className="filter hue-rotate-[260deg] brightness-50"/>
+                <Image fill alt="Arrow right icon" src="/star.svg" />
               </div>
-              <p className="text-[#8343F3] mr-1">Best Value</p>
+              <p className="section_tag_title mr-1">Best Value</p>
             </div>
-          </div>
           </div>
           <h6 className="pricing_title mt-4">Premium</h6>
           <p className="pricing_description w-[310px] mt-4">
