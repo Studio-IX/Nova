@@ -21,12 +21,12 @@ export const LandingMobile = () => {
       </div>
       <div className="flex flex-col md:flex-row w-full md:w-[1080px] items-center justify-center md:justify-between absolute">
         <div className="flex flex-col items-center md:items-start justify-center">
-          <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611]  hover:bg-[#3E281F] transition-all z-10">
+          <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-[#8343F3] bg-[rgba(131,67,243,0.1)] transition-all z-10">
             <div className="flex flex-row items-center">
               <div className="relative h-5 w-5 mr-2">
-                <Image fill alt="Phone icon" src="/mobile.svg" />
+                <Image fill alt="Phone icon" src="/mobile.svg" className="filter hue-rotate-[260deg] brightness-50"/>
               </div>
-              <p className="section_tag_title mr-1">Nova Mobile</p>
+              <p className="text-[#8343F3] mr-1">Nova Mobile</p>
             </div>
           </div>
           <div>
