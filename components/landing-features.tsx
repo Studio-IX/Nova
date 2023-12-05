@@ -18,7 +18,6 @@ export const LandingFeatures = () => {
             <Image fill alt="Arrow right icon" src="/features.svg" className="filter hue-rotate-[260deg] brightness-150"/>
           </div>
           <div className="bg-[#8343F3] rounded-full px-3 py-1 mr-2">
-            <p className="text-white">New</p>
           </div>
           <p className="text-[#8343F3]">Introducing personal bots</p>
         </div>
