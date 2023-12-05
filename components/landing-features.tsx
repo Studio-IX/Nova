@@ -14,7 +14,7 @@ export const LandingFeatures = () => {
       <div className="w-fit flex flex-row justify-between items-center px-4 py-2 rounded-full border border-primry bg-[#221611] hover:bg-[#3E281F] transition-all mt-40 z-10">
         <div className="flex flex-row items-center">
           <div className="relative h-5 w-5 mr-2">
-            <Image fill alt="Arrow right icon" src="/features.svg" />
+            <Image fill alt="Arrow right icon" src="/features.svg" className="filter hue-rotate-[260deg] brightness-150"/>
           </div>
           <p className="section_tag_title mr-1">Features</p>
         </div>
