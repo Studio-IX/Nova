@@ -20,7 +20,7 @@ export const SubscriptionButton = ({ isPro = false }: { isPro: boolean }) => {
       //window.location.href = response.data.url;
 
       window.location.href =
-        "https://studioixagency.lemonsqueezy.com/checkout/buy/94dc56f6-6a23-4bf3-870c-6feedebaec7e";
+        "https://buy.stripe.com/9AQ7vafvL4j2b2E144";
     } catch (error) {
       toast({
         description: "Something went wrong",
