@@ -43,10 +43,10 @@ export async function GET() {
           price_data: {
             currency: "USD",
             product_data: {
-              name: "Companion Pro",
+              name: "Nova - Companion Pro",
               description: "Create Custom AI Companions",
             },
-            unit_amount: 999,
+            unit_amount: 1900,
             recurring: {
               interval: "month",
             },

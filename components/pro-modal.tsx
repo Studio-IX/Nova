@@ -29,11 +29,9 @@ export const ProModal = () => {
   const onSubscribe = async () => {
     try {
       setLoading(true);
-      //const response = await axios.get("/api/stripe");
+      const response = await axios.get("/api/stripe");
 
-      //window.location.href = response.data.url;
-
-      window.location.href = "https://buy.stripe.com/9AQ7vafvL4j2b2E144";
+      window.location.href = response.data.url;
     } catch (error) {
       toast({
         description: "Something went wrong",

@@ -9,19 +9,21 @@ import { Button } from "@/components/ui/button";
 
 import Image from "next/image";
 
-interface NavbarProps {
+interface SidebarProps {
   isPro: boolean;
 }
 
-export const Sidebar = () => {
+export const Sidebar = ({
+  isPro
+}: SidebarProps) => {
   const proModal = useProModal();
   const router = useRouter();
   const pathname = usePathname();
 
   const onNavigate = (url: string, pro: boolean) => {
-    // if (pro && !isPro) {
-    //   return proModal.onOpen();
-    // }
+    if (pro && !isPro) {
+    return proModal.onOpen();
+    }
 
     return router.push(url);
   };

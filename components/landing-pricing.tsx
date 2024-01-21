@@ -3,23 +3,42 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import axios from "axios";
+
 import { useToast } from "@/components/ui/use-toast";
 import { useAuth } from "@clerk/nextjs";
+import { useState } from "react";
 
 export const LandingPricing = () => {
   const { isSignedIn } = useAuth();
   const { toast } = useToast();
+  const [loading, setLoading] = useState(false);
+
+  const onSubscribe = async () => {
+    try {
+      setLoading(true);
+      const response = await axios.get("/api/stripe");
+
+      window.location.href = response.data.url;
+    } catch (error) {
+      toast({
+        description: "Something went wrong, Sign in to upgrade to pro",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div
       id="pricing"
       className="w-full flex flex-col z-20 bg-bg items-center px-5 md:px-0 md:py-20"
     >
-
       <div className="w-fit flex flex-row justify-between items-center px-2 py-2 rounded-full border border-[#8343F3] bg-[rgba(131,67,243,0.1)] transition-all z-10">
         <div className="flex flex-row items-center mr-4">
           <div className="relative h-5 w-5 mr-2 ml-3">
-            <Image fill alt="Arrow right icon" src="/pricing.svg"/>
+            <Image fill alt="Arrow right icon" src="/pricing.svg" />
           </div>
           <p className="text-[#8343F3] mr-1">Pricing</p>
         </div>
@@ -108,7 +127,7 @@ export const LandingPricing = () => {
           <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-[#8343F3] bg-[rgba(131,67,243,0.1)] transition-all">
             <div className="flex flex-row items-center">
               <div className="relative h-5 w-5 mr-2">
-                <Image fill alt="Arrow right icon" src="/star.svg"/>
+                <Image fill alt="Arrow right icon" src="/star.svg" />
               </div>
               <p className="text-[#8343F3] mr-1">Best Value</p>
             </div>
@@ -170,11 +189,12 @@ export const LandingPricing = () => {
               </div>
             </div>
             <div className="flex w-full items-center justify-center">
-              <Link href="https://buy.stripe.com/9AQ7vafvL4j2b2E144">
-                <button className="bg-white hover:bg-[#D5D5D5] transition-all py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_black mt-10">
-                  Get Started
-                </button>
-              </Link>
+              <button
+                onClick={onSubscribe}
+                className="bg-white hover:bg-[#D5D5D5] cursor-pointer transition-all py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_black mt-10"
+              >
+                Get Started
+              </button>
             </div>
           </div>
         </div>
