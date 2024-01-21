@@ -3,28 +3,26 @@
 import SearchInput from "@/components/search-input";
 import { UserButton } from "@clerk/nextjs";
 import { Poppins } from "next/font/google";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
-import { cn } from "@/lib/utils";
 import { MobileSidebar } from "@/components/mobile-sidebar";
-import { ModeToggle } from "@/components/mode-toggle";
 import { useProModal } from "@/hooks/use-pro-modal";
-import { Button } from "./ui/button";
 import { Sparkles } from "lucide-react";
+import { Button } from "./ui/button";
 
 const font = Poppins({ weight: "600", subsets: ["latin"] });
 interface NavbarProps {
   isPro: boolean;
 }
 
-export const Navbar = () => {
+export const Navbar = ({ isPro }: NavbarProps) => {
   const proModal = useProModal();
   const pathname = usePathname();
   const hiddenPaths = ["/dashboard/companion/new", "/dashboard/settings"];
   return (
     <div className="fixed w-full z-10 flex justify-between items-center py-2 px-4 h-16 bg-dg">
       <div className="flex md:hidden items-center">
-        <MobileSidebar />
+        <MobileSidebar isPro={isPro} />
       </div>
       {!hiddenPaths.includes(pathname) && (
         <div className="md:ml-[310px] hidden md:block">
