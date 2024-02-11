@@ -52,9 +52,9 @@ export const ChatHeader = ({ companion }: ChatHeaderProps) => {
   };
 
   return (
-    <div className="flex w-full p-3 md:p-4 justify-between items-center border-b border-primary/10 pb-4">
+    <div className="flex w-full p-3 md:p-4 justify-between items-center border-b border-white/10 pb-4">
       <div className="flex gap-x-2 items-center">
-        <Button onClick={() => router.back()} size="icon" variant="ghost">
+        <Button onClick={() => router.back()} size="icon" variant="ghost2">
           <ChevronLeft color="white" className="h-8 w-8" />
         </Button>
         <BotAvatar src={companion.src} />

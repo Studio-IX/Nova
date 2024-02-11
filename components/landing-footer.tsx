@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const LandingFooter = () => {
   return (
@@ -57,7 +58,10 @@ export const LandingFooter = () => {
               Contact
             </a>
           </div>
-          <a href="https://childlike-brow-7b5.notion.site/Nova-Terms-of-Service-acb574ffd87f4f99b6fe8301e52ed2cd?pvs=4" className="footer_item mt-3">
+          <a
+            href="https://childlike-brow-7b5.notion.site/Nova-Terms-of-Service-acb574ffd87f4f99b6fe8301e52ed2cd?pvs=4"
+            className="footer_item mt-3"
+          >
             <p className="footer_item mt-3">Terms of Services</p>
           </a>
           <a href="https://childlike-brow-7b5.notion.site/Nova-Privacy-Policy-94489190271d431d842b61a71eea43dc?pvs=4">
@@ -97,27 +101,33 @@ export const LandingFooter = () => {
         </p>
 
         <div className="flex flex-row space-x-6 mt-8 md:mt-0">
-          <Image
-            className=" cursor-pointer"
-            width={23}
-            height={23}
-            src="instagram.svg"
-            alt="Instagram logo"
-          />
-          <Image
-            className=" cursor-pointer"
-            width={23}
-            height={23}
-            src="twitter.svg"
-            alt="Twitter logo"
-          />
-          <Image
-            className=" cursor-pointer"
-            width={23}
-            height={23}
-            src="github.svg"
-            alt="Github logo"
-          />
+          <Link href="https://instagram.com/studioix.agency">
+            <Image
+              className=" cursor-pointer"
+              width={23}
+              height={23}
+              src="instagram.svg"
+              alt="Instagram logo"
+            />
+          </Link>
+          <Link href="https://twitter.com/studioixagency">
+            <Image
+              className=" cursor-pointer"
+              width={23}
+              height={23}
+              src="twitter.svg"
+              alt="Twitter logo"
+            />
+          </Link>
+          <Link href="https://github.com/studioix">
+            <Image
+              className=" cursor-pointer"
+              width={23}
+              height={23}
+              src="github.svg"
+              alt="Github logo"
+            />
+          </Link>
         </div>
       </div>
     </div>

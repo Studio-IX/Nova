@@ -9,19 +9,21 @@ import { Button } from "@/components/ui/button";
 
 import Image from "next/image";
 
-interface NavbarProps {
+interface SidebarProps {
   isPro: boolean;
 }
 
-export const Sidebar = () => {
+export const Sidebar = ({
+  isPro
+}: SidebarProps) => {
   const proModal = useProModal();
   const router = useRouter();
   const pathname = usePathname();
 
   const onNavigate = (url: string, pro: boolean) => {
-    // if (pro && !isPro) {
-    //   return proModal.onOpen();
-    // }
+    if (pro && !isPro) {
+    return proModal.onOpen();
+    }
 
     return router.push(url);
   };
@@ -59,7 +61,7 @@ export const Sidebar = () => {
               onClick={() => onNavigate(route.href, route.pro)}
               key={route.href}
               className={cn(
-                "text-[#A2A2A5] text-[18px] group flex p-3 w-[250px] z-10 justify-start font-dmSans font-normal cursor-pointer hover:text-primary hover:bg-primary/10 rounded-xl transition",
+                "text-[#A2A2A5] text-[18px] group flex p-3 w-[250px] z-10 justify-start font-dmSans font-normal cursor-pointer hover:bg-primary rounded-xl transition",
                 pathname === route.href &&
                   "bg-[#1F1F1F] border border-[#363534] text-white"
               )}

@@ -6,12 +6,12 @@ export const LandingTestimonial = () => {
       id="testimonial"
       className="w-full flex flex-col z-20 bg-bg items-center py-0 md:py-20 px-5 md:px-0"
     >
-      <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611]  hover:bg-[#3E281F] transition-all mt-[15rem] z-10">
+      <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-[#8343F3] bg-[rgba(131,67,243,0.1)] transition-all mt-[15rem] z-10">
         <div className="flex flex-row items-center">
           <div className="relative h-5 w-5 mr-2">
-            <Image fill alt="Testimonial right icon" src="/testimonial.svg" />
+            <Image fill alt="Testimonial right icon" src="/testimonial.svg"/>
           </div>
-          <p className="section_tag_title mr-1">Testimonials</p>
+          <p className="text-[#8343F3] mr-1">Testimonials</p>
         </div>
       </div>
       <div>

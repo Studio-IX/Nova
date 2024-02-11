@@ -20,15 +20,12 @@ export const LandingHero = () => {
       <div className="hero_bg hidden md:block">
         <Image quality={100} fill alt="Hero background" src="/hero_bg.svg" />
       </div>
-      <div className="w-fit flex flex-row justify-between items-center px-2 py-2 rounded-full border border-primry bg-[#221611] hover:bg-[#3E281F] transition-all z-10">
+      <div className="w-fit flex flex-row justify-between items-center px-2 py-2 rounded-full border border-[#8343F3] bg-[rgba(131,67,243,0.1)] transition-all z-10">
         <div className="flex flex-row items-center mr-4">
-          <div className="bg-[#F56627] rounded-full px-3 py-1 mr-2">
-            <p className="section_tag_name">New</p>
+          <div className="bg-[#8343F3] rounded-full px-3 py-1 mr-2">
+            <p className="text-white">New</p>
           </div>
-          <p className="section_tag_title">Introducing personal bots</p>
-        </div>
-        <div className="relative h-4 w-4 mr-2">
-          <Image fill alt="Arrow right icon" src="/arrow_right.svg" />
+          <p className="text-[#8343F3]">Introducing personal bots</p>
         </div>
       </div>
 

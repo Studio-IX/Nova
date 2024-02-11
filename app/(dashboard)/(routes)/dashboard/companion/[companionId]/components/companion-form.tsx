@@ -199,7 +199,7 @@ export const CompanionForm = ({
                     defaultValue={field.value}
                   >
                     <FormControl>
-                      <SelectTrigger className="bg-[#1F1F1F] border border-[#363534]">
+                      <SelectTrigger className="bg-[#1F1F1F] border border-[#363534] text-white">
                         <SelectValue
                           defaultValue={field.value}
                           placeholder="Select a category"
@@ -241,7 +241,7 @@ export const CompanionForm = ({
                   <Textarea
                     disabled={isLoading}
                     rows={7}
-                    className="bg-[#1F1F1F] resize-none border border-[#363534] font-dmSans font-normal text-[16px]"
+                    className="bg-[#1F1F1F] resize-none border border-[#363534] font-dmSans font-normal text-[16px] text-white"
                     placeholder={PREAMBLE}
                     {...field}
                   />
@@ -264,7 +264,7 @@ export const CompanionForm = ({
                   <Textarea
                     disabled={isLoading}
                     rows={7}
-                    className="bg-[#1F1F1F] resize-none border border-[#363534] font-dmSans font-normal text-[16px]"
+                    className="bg-[#1F1F1F] resize-none border text-white border-[#363534] font-dmSans font-normal text-[16px]"
                     placeholder={SEED_CHAT}
                     {...field}
                   />

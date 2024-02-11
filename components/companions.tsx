@@ -16,15 +16,15 @@ export const Companions = ({ data }: CompanionProps) => {
   if (data.length === 0) {
     return (
       <div className="pt-10 flex flex-col items-center justify-center space-y-3">
-        <div className="relative w-60 h-60">
+        <div className="relative w-[20rem] md:w-[28rem] h-[20rem] md:h-[28rem]">
           <Image fill className="grayscale" alt="Empty" src="/empty.png" />
         </div>
-        <p className="text-sm text-muted-foreground">No companions found</p>
+        <p className="text-base text-muted-foreground">No companions found</p>
       </div>
     );
   }
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 pb-10 pt-10">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 pb-10 pt-10">
       {data.map((item) => (
         <Card
           key={item.id}
@@ -45,7 +45,7 @@ export const Companions = ({ data }: CompanionProps) => {
               <p className="font-medium text-[16px] md:text-[20px] font-dmSans text-white">
                 {item.name}
               </p>
-              <p className="text-[15px] md:text-[16px] font-dmSans font-light text-[#9B9CA1]">
+              <p className="text-[15px] md:text-[16px] font-dmSans font-light text-[#9B9CA1] min-h-[50px]">
                 {item.description}
               </p>
             </CardContent>

@@ -59,9 +59,9 @@ export const ChatMessage = ({
           onClick={onCopy}
           className="opacity-0 group-hover:opacity-100 transition"
           size="icon"
-          variant="ghost"
+          variant="ghost2"
         >
-          <Copy className="w-4 h-4" />
+          <Copy color="white" className="w-4 h-4" />
         </Button>
       )}
     </div>

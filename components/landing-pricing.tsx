@@ -3,24 +3,44 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { useAuth } from "@clerk/nextjs";
+import axios from "axios";
+
 import { useToast } from "@/components/ui/use-toast";
+import { useAuth } from "@clerk/nextjs";
+import { useState } from "react";
 
 export const LandingPricing = () => {
   const { isSignedIn } = useAuth();
   const { toast } = useToast();
+  const [loading, setLoading] = useState(false);
+
+  const onSubscribe = async () => {
+    try {
+      setLoading(true);
+      const response = await axios.get("/api/stripe");
+
+      window.location.href = response.data.url;
+    } catch (error) {
+      toast({
+        description: "Something went wrong, Sign in to upgrade to pro",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div
       id="pricing"
       className="w-full flex flex-col z-20 bg-bg items-center px-5 md:px-0 md:py-20"
     >
-      <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611] hover:bg-[#3E281F] transition-all mt-20 md:mt-[15rem] z-10">
-        <div className="flex flex-row items-center">
-          <div className="relative h-5 w-5 mr-2">
+      <div className="w-fit flex flex-row justify-between items-center px-2 py-2 rounded-full border border-[#8343F3] bg-[rgba(131,67,243,0.1)] transition-all z-10">
+        <div className="flex flex-row items-center mr-4">
+          <div className="relative h-5 w-5 mr-2 ml-3">
             <Image fill alt="Arrow right icon" src="/pricing.svg" />
           </div>
-          <p className="section_tag_title mr-1">Pricing</p>
+          <p className="text-[#8343F3] mr-1">Pricing</p>
         </div>
       </div>
 
@@ -95,7 +115,7 @@ export const LandingPricing = () => {
             </div>
             <div className="flex w-full items-center justify-center">
               <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-                <button className="bg-[#1F1F1F] hover:bg-[#F56627] transition-all border border-[#3B3B3B] py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_white mt-10">
+                <button className="bg-[#1F1F1F] hover:bg-[#8343F3] transition-all border border-[#3B3B3B] py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_white mt-10">
                   Get Started
                 </button>
               </Link>
@@ -104,12 +124,12 @@ export const LandingPricing = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center w-full md:w-[385px] h-[680px] bg-[#161616] border border-[#242424] rounded-[1.8rem]">
-          <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-primry bg-[#221611]  hover:bg-[#3E281F] transition-all">
+          <div className="w-fit flex flex-row justify-between items-center px-4 py-2 cursor-pointer rounded-full border border-[#8343F3] bg-[rgba(131,67,243,0.1)] transition-all">
             <div className="flex flex-row items-center">
               <div className="relative h-5 w-5 mr-2">
                 <Image fill alt="Arrow right icon" src="/star.svg" />
               </div>
-              <p className="section_tag_title mr-1">Best Value</p>
+              <p className="text-[#8343F3] mr-1">Best Value</p>
             </div>
           </div>
           <h6 className="pricing_title mt-4">Premium</h6>
@@ -169,11 +189,12 @@ export const LandingPricing = () => {
               </div>
             </div>
             <div className="flex w-full items-center justify-center">
-              <Link href="https://studioixagency.lemonsqueezy.com/checkout/buy/94dc56f6-6a23-4bf3-870c-6feedebaec7e">
-                <button className="bg-white hover:bg-[#D5D5D5] transition-all py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_black mt-10">
-                  Get Started
-                </button>
-              </Link>
+              <button
+                onClick={onSubscribe}
+                className="bg-white hover:bg-[#D5D5D5] cursor-pointer transition-all py-4 md:py-5 px-28 w-fit rounded-full hero_button_text_black mt-10"
+              >
+                Get Started
+              </button>
             </div>
           </div>
         </div>
