@@ -1,5 +1,9 @@
 "use client";
 
+interface SubscriptionButtonProps{
+  isPro: boolean;
+};
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Sparkles } from "lucide-react";
@@ -7,7 +11,7 @@ import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 
-export const SubscriptionButton = ({ isPro = false }: { isPro: boolean }) => {
+export const SubscriptionButton = ({ isPro = false }: SubscriptionButtonProps) => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
 
@@ -15,9 +19,9 @@ export const SubscriptionButton = ({ isPro = false }: { isPro: boolean }) => {
     try {
       setLoading(true);
 
-      //const response = await axios.get("/api/stripe");
+      const response = await axios.get("/api/stripe");
 
-      //window.location.href = response.data.url;
+      window.location.href = response.data.url;
 
       window.location.href =
         "https://buy.stripe.com/9AQ7vafvL4j2b2E144";

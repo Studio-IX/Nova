@@ -9,6 +9,7 @@ import { MobileSidebar } from "@/components/mobile-sidebar";
 import { useProModal } from "@/hooks/use-pro-modal";
 import { Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
+import { ModeToggle } from "./mode-toggle";
 
 const font = Poppins({ weight: "600", subsets: ["latin"] });
 interface NavbarProps {
@@ -30,18 +31,23 @@ export const Navbar = ({ isPro }: NavbarProps) => {
         </div>
       )}
       <div className="flex items-center gap-x-3">
-        {/* <ModeToggle /> */}
-        <div className="md:hidden">
+        {
+          !isPro && (
+            
+            <div className="md:hidden">
           <Button
             className="rounded-lg"
             onClick={proModal.onOpen}
             size="lg"
             variant="premium"
-          >
+            >
             Upgrade
             <Sparkles className="h-5 w-5 fill-white text-white ml-2" />
           </Button>
         </div>
+          )
+        }
+        {/* <ModeToggle /> */}
         <UserButton afterSignOutUrl="/" />
       </div>
     </div>
