@@ -5,7 +5,7 @@ const SettingsPage = async () => {
   const isPro = await checkSubscription();
 
   return (
-    <div className="h-full p-4 -mt-16 z-[1111] relative">
+    <div className="h-full p-4 md:-mt-16 md:z-[11] relative">
       <h3 className="text-2xl font-medium text-white">Settings</h3>
       <div className="text-muted-foreground text-base mt-1">
         {isPro

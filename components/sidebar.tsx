@@ -50,7 +50,7 @@ export const Sidebar = ({
   ];
 
   return (
-    <div className="space-y-4 flex flex-col items-center h-full text-primary bg-sg w-[300px]">
+    <div className="space-y-4 flex flex-col items-center h-full text-primary bg-sg w-[300px] z-50">
       <div className="pt-[60px] md:pt-[15px] pb-[200px]">
         <Image width={35} height={35} src="logo_dashboard.svg" alt="logo" />
       </div>
