@@ -37,7 +37,7 @@ export const SubscriptionButton = ({ isPro = false }: SubscriptionButtonProps) =
 
   return (
     <Button
-    className="mt-4"
+    className={`mt-4 ${isPro ? 'bg-white text-black hover:bg-gray-400 p-4 text-lg' : ''}`}
       size="sm"
       variant={isPro ? "default" : "premium"}
       disabled={loading}
