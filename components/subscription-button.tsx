@@ -23,8 +23,7 @@ export const SubscriptionButton = ({ isPro = false }: SubscriptionButtonProps) =
 
       window.location.href = response.data.url;
 
-      window.location.href =
-        "https://buy.stripe.com/9AQ7vafvL4j2b2E144";
+      // window.location.href = "https://buy.stripe.com/9AQ7vafvL4j2b2E144";
     } catch (error) {
       toast({
         description: "Something went wrong",
